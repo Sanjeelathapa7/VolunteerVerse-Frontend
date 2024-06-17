@@ -1,24 +1,63 @@
-import logo from './logo.svg';
+
+
+
+
+
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from 'react-router-dom';
+
 import './App.css';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
+
+
+//router bhitra multiple routes huncha
+//routes bhitra single single routes create garne
+//element ko lagi diff file garauna parcha ani yeta ayera connect garne
+
+import Register from './pages/user/Register';
+import Login from './pages/user/Login';
+import Homepage from './pages/user/Homepage';
+import Navbar from './components/Navbar';
+
+
+// import AdminRoutes from './pages/protected_routes/AdminRoutes';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+
+
+    <Router>
+      <Routes>
+
+
+
+        {/* Admin routes */}
+        {/* <Route element={<AdminRoutes />}> */}
+
+        <Route path='/register' element={<Register />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/home' element={<Homepage />} />
+
+
+
+
+
+      </Routes>
+
+
+
+
+
+
+    </Router>
+
   );
 }
 
