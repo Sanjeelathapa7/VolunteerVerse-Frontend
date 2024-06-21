@@ -1,6 +1,7 @@
 // src/components/Navbar.jsx
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import { NavLink as RouterNavLink } from "react-router-dom";
+import styled from "styled-components";
 
 const NavbarContainer = styled.nav`
   display: flex;
@@ -8,7 +9,9 @@ const NavbarContainer = styled.nav`
   justify-content: space-between;
   padding: 10px 20px;
   background-color: white;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #eee;
+box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+
 `;
 
 const Logo = styled.img`
@@ -21,13 +24,19 @@ const NavLinks = styled.ul`
   gap: 20px;
 `;
 
-const NavLink = styled.li`
+const NavLink = styled(RouterNavLink)`
   font-size: 16px;
   cursor: pointer;
   padding: 5px 10px;
+  text-decoration: none;
+  color: black;
+  
+  &.active {
+    border-bottom: 2px solid blue;
+  }
 
   &:hover {
-    text-decoration: underline;
+    color: blue;
   }
 `;
 
@@ -51,19 +60,25 @@ const Button = styled.button`
 
 const Navbar = () => {
   return (
+    
     <NavbarContainer>
-      <img src="/assets/images/Logo.png" alt="VolunteerVerse Logo" style={{ height: '90px'  }} />
+      <img
+        src="/assets/images/Logo.png"
+        alt="VolunteerVerse Logo"
+        style={{ height: "70px" }}
+      />
       <NavLinks>
-        <NavLink>Home</NavLink>
-        <NavLink>What we do</NavLink>
-        <NavLink>Our Impact</NavLink>
-        <NavLink>Donate</NavLink>
+        <NavLink to="/home" activeClassName="active">Home</NavLink>
+        <NavLink to="/whatwedo" activeClassName="active">What we do</NavLink>
+        <NavLink to="/ourimpact" activeClassName="active">Our Impact</NavLink>
+        <NavLink to="/register" activeClassName="active">Donate</NavLink>
       </NavLinks>
       <ButtonContainer>
         <Button>Register</Button>
         <Button>Login</Button>
       </ButtonContainer>
     </NavbarContainer>
+    
   );
 };
 

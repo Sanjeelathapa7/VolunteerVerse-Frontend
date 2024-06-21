@@ -24,6 +24,12 @@ import Register from './pages/user/Register';
 import Login from './pages/user/Login';
 import Homepage from './pages/user/Homepage';
 import Navbar from './components/Navbar';
+import WomenEmpowerment from './pages/user/WomenEmpowerment';
+import SendEmail from './pages/user/Email';
+import ResetPassword from './pages/user/ResetPassword';
+import ForgotPasswordCode from './pages/user/ForgetPassword';
+import Whatwedo from './pages/user/Whatwedo';
+import OurImpact from './pages/user/OurImpact';
 
 
 // import AdminRoutes from './pages/protected_routes/AdminRoutes';
@@ -44,6 +50,14 @@ function App() {
         <Route path='/register' element={<Register />} />
         <Route path='/login' element={<Login />} />
         <Route path='/home' element={<Homepage />} />
+        <Route path='/women-empowerment' element={<WomenEmpowerment />} />
+        <Route path='/sendemail' element={<SendEmail />} />
+        <Route path='/resetpassword' element={<ResetPassword />} />
+        <Route path='/resetcode' element={<ForgotPasswordCode />} />
+        <Route path='/whatwedo' element={<Whatwedo />} />
+        <Route path='/ourimpact' element={<OurImpact />} />
+
+
 
 
 
