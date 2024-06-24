@@ -205,7 +205,7 @@ const testimonials = [
 ];
 const Homepage = () => {
   return (
-    <div style={{ width: "100%", position: "relative", }}>
+    <div style={{ width: "100%", position: "relative" }}>
       <Navbar />
 
       <div
@@ -272,20 +272,23 @@ const Homepage = () => {
             <h2 className="text-font">Internship in Nepal</h2>
 
             <p style={{ textAlign: "right" }}>
-              Internship in Nepal offers a unique and enriching opportunity for individuals to gain
-              hands-on experience in a variety of meaningful projects while fully immersing themselves
-              in the country's rich cultural heritage. This experience is ideal for students, recent
-              graduates, and professionals seeking to enhance their skills and broaden their horizons.
-              Interns in Nepal have the chance to work in diverse fields such as healthcare, education,
-              environmental conservation, social work, and community development, among others.
-
-              During an internship in Nepal,
-              individuals are not only able to apply their academic knowledge and professional
-              skills in real-world settings but also contribute significantly to local communities.
-              The projects often address critical issues such as improving healthcare services,
-              promoting sustainable practices, enhancing educational outcomes, and empowering marginalized
-              groups. This hands-on involvement provides interns with practical insights and a deeper understanding
-              of global challenges and local solutions.
+              Internship in Nepal offers a unique and enriching opportunity for
+              individuals to gain hands-on experience in a variety of meaningful
+              projects while fully immersing themselves in the country's rich
+              cultural heritage. This experience is ideal for students, recent
+              graduates, and professionals seeking to enhance their skills and
+              broaden their horizons. Interns in Nepal have the chance to work
+              in diverse fields such as healthcare, education, environmental
+              conservation, social work, and community development, among
+              others. During an internship in Nepal, individuals are not only
+              able to apply their academic knowledge and professional skills in
+              real-world settings but also contribute significantly to local
+              communities. The projects often address critical issues such as
+              improving healthcare services, promoting sustainable practices,
+              enhancing educational outcomes, and empowering marginalized
+              groups. This hands-on involvement provides interns with practical
+              insights and a deeper understanding of global challenges and local
+              solutions.
             </p>
           </div>
           <div style={{ width: "30%" }}>
@@ -342,7 +345,7 @@ const Homepage = () => {
               <img
                 src="/assets/images/Youth.jpg"
                 alt="Youth Empowerment"
-                style={{ width: "100%", height: "auto" }}
+                style={{ width: "100%", height: "64%" }}
               />
               <h2>
                 <Link
@@ -362,7 +365,7 @@ const Homepage = () => {
               <img
                 src="/assets/images/Child.jpeg"
                 alt="Children Development"
-                style={{ width: "100%", height: "auto" }}
+                style={{ width: "100%", height: "64%" }}
               />
               <h2>
                 <Link
@@ -393,7 +396,7 @@ const Homepage = () => {
                 <img
                   src="/assets/images/Com.jpg"
                   alt="Community Health"
-                  style={{ width: "100%", height: "auto" }}
+                  style={{ width: "100%", height: "67%" }}
                 />
                 <h2>
                   <Link
@@ -414,7 +417,7 @@ const Homepage = () => {
                 <img
                   src="/assets/images/DRR.jpg"
                   alt="DRR Research Volunteer"
-                  style={{ width: "100%", height: "auto" }}
+                  style={{ width: "100%", height: "68%" }}
                 />
                 <h2>
                   <Link

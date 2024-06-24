@@ -30,6 +30,7 @@ import ResetPassword from './pages/user/ResetPassword';
 import ForgotPasswordCode from './pages/user/ForgetPassword';
 import Whatwedo from './pages/user/Whatwedo';
 import OurImpact from './pages/user/OurImpact';
+import Contact from './pages/user/Contact';
 
 
 // import AdminRoutes from './pages/protected_routes/AdminRoutes';
@@ -56,6 +57,9 @@ function App() {
         <Route path='/resetcode' element={<ForgotPasswordCode />} />
         <Route path='/whatwedo' element={<Whatwedo />} />
         <Route path='/ourimpact' element={<OurImpact />} />
+        <Route path='/contactus' element={<Contact />} />
+        
+
 
 
 
