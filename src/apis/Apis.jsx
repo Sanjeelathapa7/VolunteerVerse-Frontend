@@ -34,3 +34,24 @@ export const sendEmailApi = (data) => Api.post("/api/user/resetpassword", data);
 export const verifyCodeApi = (data) => Api.post("/api/user/resetcode", data, config);
 export const updatePasswordApi = (data) => Api.post("/api/user/updatepassword", data);
 
+
+//create donation
+
+export const createDonationApi = (formData) =>
+  Api.post("/api/donation/create_donation", formData);
+
+// get donation API
+export const getAllDonationsApi = () => Api.get("/api/donation/get_donations");
+
+//get single donation API
+export const getSingleDonationApi = (id) =>
+  Api.get(`/api/donation/get_donation/${id}`);
+
+//update donation
+export const updateDonationApi = (id, formData) =>
+  Api.put(`/api/donation/update_donation/${id}`, formData, config);
+
+//delete donation
+export const deleteDonationApi = (id) =>
+  Api.delete(`/api/donation/delete_donation/${id}`, config);
+

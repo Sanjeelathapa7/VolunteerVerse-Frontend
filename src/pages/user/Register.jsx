@@ -32,6 +32,7 @@ const Register = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log(firstName, lastName, email, password, confirmPassword);
 
     const data = {
       firstName: firstName,

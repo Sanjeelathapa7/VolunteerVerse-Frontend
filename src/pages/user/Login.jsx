@@ -32,7 +32,6 @@ const Login = () => {
         } else {
           toast.success(res.data.message);
           localStorage.setItem("token", res.data.token);
-          const convertedJson = JSON.stringify(res.data.userData);
 
           // Check if user is admin
           const isAdmin = res.data.isAdmin;
@@ -45,7 +44,7 @@ const Login = () => {
             // Redirect to user dashboard
             navigate("/user/dashboard");
           }
-
+          const convertedJson = JSON.stringify(res.data.userData);
           localStorage.setItem("user", convertedJson);
         }
       })
@@ -61,7 +60,7 @@ const Login = () => {
         style={{
           boxShadow: "0px 0px 10px 0px rgba(0,0,0,0.2)",
           borderRadius: "10px",
-          overflow: "hidden"
+          overflow: "hidden",
         }}
         className="d-flex"
       >
@@ -126,7 +125,6 @@ const Login = () => {
       </div>
     </div>
   );
-  
 };
 
 export default Login;

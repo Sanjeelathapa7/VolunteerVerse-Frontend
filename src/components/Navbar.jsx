@@ -30,7 +30,7 @@
 //   padding: 5px 10px;
 //   text-decoration: none;
 //   color: black;
-  
+
 //   &.active {
 //     border-bottom: 2px solid blue;
 //   }
@@ -60,7 +60,7 @@
 
 // const Navbar = () => {
 //   return (
-    
+
 //     <NavbarContainer>
 //       <img
 //         src="/assets/images/Logo.png"
@@ -79,12 +79,11 @@
 //         <Button>Login</Button>
 //       </ButtonContainer>
 //     </NavbarContainer>
-    
+
 //   );
 // };
 
 // export default Navbar;
-
 
 import React from "react";
 import { NavLink as RouterNavLink, useNavigate } from "react-router-dom";
@@ -116,7 +115,7 @@ const NavLink = styled(RouterNavLink)`
   padding: 5px 10px;
   text-decoration: none;
   color: black;
-  
+
   &.active {
     border-bottom: 2px solid blue;
     color: blue;
@@ -145,6 +144,8 @@ const Button = styled.button`
   }
 `;
 
+
+
 const Navbar = () => {
   const navigate = useNavigate();
 
@@ -156,14 +157,22 @@ const Navbar = () => {
         style={{ height: "70px" }}
       />
       <NavLinks>
-        <NavLink to="/home" activeClassName="active">Home</NavLink>
-        <NavLink to="/whatwedo" activeClassName="active">What we do</NavLink>
-        <NavLink to="/ourimpact" activeClassName="active">Our Impact</NavLink>
-        <NavLink to="/register" activeClassName="active">Donate</NavLink>
+        <NavLink to="/home" activeClassName="active" className="text-font">
+          Home
+        </NavLink>
+        <NavLink to="/whatwedo" activeClassName="active" className="text-font">
+          What we do
+        </NavLink>
+        <NavLink to="/ourimpact" activeClassName="active" className="text-font">
+          Our Impact
+        </NavLink>
+        <NavLink to="/register" activeClassName="active" className="text-font">
+          Donate
+        </NavLink>
       </NavLinks>
       <ButtonContainer>
-        <Button onClick={() => navigate('/register')}>Register</Button>
-        <Button onClick={() => navigate('/login')}>Login</Button>
+        <Button onClick={() => navigate("/register")}>Register</Button>
+        <Button onClick={() => navigate("/login")}>Login</Button>
       </ButtonContainer>
     </NavbarContainer>
   );
