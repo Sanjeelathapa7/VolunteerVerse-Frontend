@@ -31,6 +31,8 @@ import Whatwedo from './pages/user/Whatwedo';
 import OurImpact from './pages/user/OurImpact';
 import Contact from './pages/user/Contact';
 import AdminDashboard from './pages/admin/AdminDashboard';
+import UserDashboard from './pages/user/UserDashboard';
+import Event from './pages/user/Events';
 
 
 // import AdminRoutes from './pages/protected_routes/AdminRoutes';
@@ -60,6 +62,8 @@ function App() {
         <Route path='/ourimpact' element={<OurImpact />} />
         <Route path='/contactus' element={<Contact />} />
         <Route path='/admin/dashboard' element={<AdminDashboard />} />
+        <Route path='/user/dashboard' element={<UserDashboard />} />
+        <Route path='/event' element={<Event />} />
         
 
 
