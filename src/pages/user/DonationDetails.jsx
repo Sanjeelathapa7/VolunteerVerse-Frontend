@@ -1,12 +1,15 @@
 
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import axios from 'axios';
+import KhaltiCheckout from 'khalti-checkout-web';
+import config from '../../components/Khalti/khaltiConfig';
 import { getSingleDonationApi } from '../../apis/Apis'; // Adjust import as per your API structure
 
 const DonationDetails = () => {
   const [donation, setDonation] = useState(null); // Initialize with null
   const { id } = useParams(); // Get the donation ID from URL params
+  let checkout = new KhaltiCheckout(config);
+
 
   useEffect(() => {
     const fetchDonation = async () => {
@@ -240,7 +243,19 @@ const DonationDetails = () => {
         </div>
         <div className="donation-right">
                   <p className="about-campaign">{donation.donationDetails}</p>
-                  <a href="#" className="donate-now">Donate now</a>
+                  <button
+                  className="btn btn-sm"
+                  style={{
+                    backgroundColor: "rgba(97, 124, 181, 1)",
+                    color: "white",
+                    padding: "12px 24px",
+                    fontSize: "18px",
+                  }}
+                  onClick={() => checkout.show({ amount: 20000 })}
+                >
+                  Donate
+                </button>
+          
 
 
         </div>
