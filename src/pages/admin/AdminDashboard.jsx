@@ -1,3 +1,6 @@
+
+
+
 import React, { useState, useEffect } from "react";
 import {
   createDonationApi,
@@ -6,6 +9,7 @@ import {
 } from "../../apis/Apis";
 import { toast } from "react-toastify";
 import { Link } from "react-router-dom";
+import AdminNavbar from "../../components/AdminNavbar"; // assuming AdminNavbar is defined and imported correctly
 
 const AdminDashboard = () => {
   // Make useState
@@ -97,8 +101,11 @@ const AdminDashboard = () => {
 
   return (
     <>
+      <AdminNavbar />
+      
       <div className="m-5">
         <div className="d-flex justify-content-between mb-2">
+            
           <h1>Admin Dashboard</h1>
           <button
             type="button"
@@ -198,6 +205,7 @@ const AdminDashboard = () => {
                       className="img-fluid rounded object-cover mt-2"
                       height={100}
                       width={100}
+                      alt="Preview"
                     />
                   )}
                   <button type="submit" className="btn btn-primary">
@@ -227,7 +235,12 @@ const AdminDashboard = () => {
           {donations.map((item) => (
             <tr key={item._id}>
               <td>
-                <img src={item.donationImageUrl} height={100} width={100} alt={item.donationName}/>
+                <img
+                  src={item.donationImageUrl}
+                  height={100}
+                  width={100}
+                  alt={item.donationName}
+                />
               </td>
               <td>{item.donationName}</td>
               <td>{item.donor}</td>
@@ -237,7 +250,11 @@ const AdminDashboard = () => {
               <td>{item.percentage}</td>
               <td>{item.donationDetails.slice(0, 20)}</td>
               <td>
-                <div className="btn-group" role="group" aria-label="Basic example">
+                <div
+                  className="btn-group"
+                  role="group"
+                  aria-label="Basic example"
+                >
                   <Link
                     to={`/admin/edit/${item._id}`}
                     type="button"

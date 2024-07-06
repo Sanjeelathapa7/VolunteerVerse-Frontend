@@ -393,7 +393,7 @@ const Dashboard = () => {
             <a href="#">Performance</a>
           </li>
           <li>
-            <a href="#">Profile</a>
+            <a href="/profile">Profile</a>
           </li>
         </ul>
       </nav>

@@ -55,3 +55,36 @@ export const updateDonationApi = (id, formData) =>
 export const deleteDonationApi = (id) =>
   Api.delete(`/api/donation/delete_donation/${id}`, config);
 
+
+
+
+//create events
+
+export const createEventApi = (formData) =>
+  Api.post("/api/event/create_event", formData);
+
+// get event API
+export const getAllEventsApi = () => Api.get("/api/event/get_events");
+
+//get single event API
+export const getSingleEventApi = (id) =>
+  Api.get(`/api/event/get_event/${id}`);
+
+//update event
+export const updateEventApi = (id, formData) =>
+  Api.put(`/api/event/update_event/${id}`, formData, config);
+
+//delete event
+export const deleteEventApi = (id) =>
+  Api.delete(`/api/event/delete_event/${id}`, config);
+
+
+
+//for profile 
+export const getUserProfileApi = () => {
+  return Api.get("/api/user/profile", config); // Ensure `config` is passed here
+};
+export const updateUserProfileApi = (userId, data) =>
+  Api.put(`/api/user/update_profile/${userId}`, data,config);
+
+

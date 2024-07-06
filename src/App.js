@@ -165,6 +165,8 @@ import UserDashboard from './pages/user/UserDashboard';
 import Event from './pages/user/Events';
 import DonationDetails from './pages/user/DonationDetails';
 import DonationList from './components/DonationList';
+import Profile from './pages/user/Profile';
+import AdminEvent from './pages/admin/AdminEvent';
 
 function App() {
   return (
@@ -186,6 +188,11 @@ function App() {
         <Route path="/event" element={<Event />} />
         <Route path="/donations" element={<DonationList />} /> {/* Assuming this is your donations list route */}
         <Route path="/donation/:id" element={<DonationDetails />} /> {/* Donation detail route */}
+        <Route path="/profile" element={<Profile />} /> 
+        <Route path="/admin/event" element={<AdminEvent />} />
+
+
+        
       </Routes>
     </Router>
   );
