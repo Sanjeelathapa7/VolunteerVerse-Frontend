@@ -387,7 +387,7 @@ const Dashboard = () => {
             <a href="#">Notification</a>
           </li>
           <li>
-            <a href="#">Chat</a>
+            <a href="/chat">Chat</a>
           </li>
           <li>
             <a href="#">Performance</a>
@@ -415,7 +415,11 @@ const Dashboard = () => {
               <DonationCard key={donation._id} donation={donation} />
             ))}
           </div>
+          <h1>Events</h1>
+          
+
         </div>
+        
       </main>
     </div>
   );

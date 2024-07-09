@@ -167,6 +167,9 @@ import DonationDetails from './pages/user/DonationDetails';
 import DonationList from './components/DonationList';
 import Profile from './pages/user/Profile';
 import AdminEvent from './pages/admin/AdminEvent';
+import Chat from './pages/user/Chat';
+import AdminChat from './pages/admin/AdminChat';
+import AdminOrganization from './pages/admin/AdminOrganization';
 
 function App() {
   return (
@@ -190,6 +193,11 @@ function App() {
         <Route path="/donation/:id" element={<DonationDetails />} /> {/* Donation detail route */}
         <Route path="/profile" element={<Profile />} /> 
         <Route path="/admin/event" element={<AdminEvent />} />
+        <Route path="/chat" element={<Chat />} />
+        <Route path="/admin/chat" element={<AdminChat />} />
+        <Route path="/admin/organization" element={<AdminOrganization />} />
+        
+
 
 
         

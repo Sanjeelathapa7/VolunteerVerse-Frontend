@@ -88,3 +88,24 @@ export const updateUserProfileApi = (userId, data) =>
   Api.put(`/api/user/update_profile/${userId}`, data,config);
 
 
+
+
+//for organizations 
+
+export const createOrganizationApi = (formData) =>
+  Api.post("/api/organization/create_organization", formData);
+
+// get organization API
+export const getAllOrganizationsApi = () => Api.get("/api/organization/get_organizations");
+
+//get single organization API
+export const getSingleOrganizationApi = (id) =>
+  Api.get(`/api/organization/get_organization/${id}`);
+
+//update organization
+export const updateOrganizationApi = (id, formData) =>
+  Api.put(`/api/organization/update_organization/${id}`, formData, config);
+
+//delete organization
+export const deleteOrganizationApi = (id) =>
+  Api.delete(`/api/organization/delete_organization/${id}`, config);

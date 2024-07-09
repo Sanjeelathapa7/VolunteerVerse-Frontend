@@ -168,8 +168,14 @@ const AdminNavbar = () => {
         <NavLink to="/admin/event" className={({ isActive }) => (isActive ? "active text-font" : "text-font")}>
           Event
         </NavLink>
+        <NavLink to="/admin/chat" className={({ isActive }) => (isActive ? "active text-font" : "text-font")}>
+          Chat
+        </NavLink>
         <NavLink to="/admin/notification" className={({ isActive }) => (isActive ? "active text-font" : "text-font")}>
           Notification
+        </NavLink>
+        <NavLink to="/admin/organization" className={({ isActive }) => (isActive ? "active text-font" : "text-font")}>
+          Organization
         </NavLink>
       </NavLinks>
     </NavbarContainer>
