@@ -55,7 +55,10 @@ export const updateDonationApi = (id, formData) =>
 export const deleteDonationApi = (id) =>
   Api.delete(`/api/donation/delete_donation/${id}`, config);
 
-
+export const updateDonationPercentageApi = async (id) => {
+  const response = await axios.put(`/donations/update-percentage/${id}`);
+  return response.data;
+}
 
 
 //create events

@@ -1,0 +1,22 @@
+[
+    {
+      "_id": "1",
+      "organizationName": "Organization One",
+      "organizationDetails": "Details about Organization One...",
+      "logo": "/assets/images/Logo.png"
+    },
+    {
+      "_id": "2",
+      "organizationName": "Organization Two",
+      "organizationDetails": "Details about Organization Two...",
+      "logo": "/assets/images/Logoo2.png"
+    },
+    {
+        "_id": "3",
+        "organizationName": "Organization Three",
+        "organizationDetails": "Details about Organization Three...",
+        "logo": "/assets/images/Logo.png"
+      }
+  ]
+
+  

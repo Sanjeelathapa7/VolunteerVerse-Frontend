@@ -66,7 +66,7 @@
 //         <Route path='/user/dashboard' element={<UserDashboard />} />
 //         <Route path='/event' element={<Event />} />
 
-        
+
 
 
 
@@ -118,7 +118,7 @@
 // import DonationList from './components/DonationList';
 
 // function App() {
-  
+
 
 //   return (
 //     <Router>
@@ -137,7 +137,7 @@
 //         <Route path='/admin/dashboard' element={<AdminDashboard />} />
 //         <Route path='/user/dashboard' element={<UserDashboard />} />
 //         <Route path='/event' element={<Event />} />
-        
+
 //       </Routes>
 //     </Router>
 //   );
@@ -170,6 +170,8 @@ import AdminEvent from './pages/admin/AdminEvent';
 import Chat from './pages/user/Chat';
 import AdminChat from './pages/admin/AdminChat';
 import AdminOrganization from './pages/admin/AdminOrganization';
+import OrganizationDetails from './pages/user/OrganizationDetails';
+import EventList from './pages/user/EventGet';
 
 function App() {
   return (
@@ -191,16 +193,19 @@ function App() {
         <Route path="/event" element={<Event />} />
         <Route path="/donations" element={<DonationList />} /> {/* Assuming this is your donations list route */}
         <Route path="/donation/:id" element={<DonationDetails />} /> {/* Donation detail route */}
-        <Route path="/profile" element={<Profile />} /> 
+        <Route path="/profile" element={<Profile />} />
         <Route path="/admin/event" element={<AdminEvent />} />
-        <Route path="/chat" element={<Chat />} />
-        <Route path="/admin/chat" element={<AdminChat />} />
+        {/* <Route path="/chat" element={<Chat />} /> */}
+        {/* <Route path="/admin/chat" element={<AdminChat />} /> */}
         <Route path="/admin/organization" element={<AdminOrganization />} />
-        
+        <Route path="/get_events" element={<EventList />} />
+
+        <Route path="/organization/:id" element={<OrganizationDetails />} /> {/* Donation detail route */}
 
 
 
-        
+
+
       </Routes>
     </Router>
   );

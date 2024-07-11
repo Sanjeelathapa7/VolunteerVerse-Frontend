@@ -1,19 +1,17 @@
-// // components/OrganizationsList.js
-// import React from 'react';
+import React from 'react';
+import OrganizationCard from './OrganizationCard';
 
-// const OrganizationsList = ({ organizations }) => {
-//   return (
-//     <div>
-//       <h2>Organizations</h2>
-//       <ul>
-//         {organizations.map((org) => (
-//           <li key={org._id}>
-//             <strong>{org.name}</strong> - {org.category} - {org.location}
-//           </li>
-//         ))}
-//       </ul>
-//     </div>
-//   );
-// };
+const OrganizationList = ({ organizations }) => {
+    return (
+        <div className="organization-section">
+            <h2>Organization</h2>
+            <div className="organization-list">
+                {organization.map((organization) => (
+                    <OrganizationCard key={organization._id} organization={organization} />
+                ))}
+            </div>
+        </div>
+    );
+};
 
-// export default OrganizationsList;
+export default OrganizationList;
