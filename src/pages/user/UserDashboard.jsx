@@ -860,7 +860,7 @@ const Dashboard = () => {
             <a href="/event">Calendar</a>
           </li>
           <li>
-            <a href="#">Events</a>
+            <a href="/eventDetails">Events</a>
           </li>
           <li>
             <a href="/chat">Chat</a>

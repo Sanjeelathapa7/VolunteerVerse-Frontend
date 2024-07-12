@@ -1,36 +1,33 @@
-
-
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import { getSingleEventApi } from '../../apis/Apis'; // Adjust import as per your API structure
 
-import { getSingleOrganizationApi } from '../../apis/Apis'; // Adjust import as per your API structure
-
-const OrganizationDetails = () => {
-  const [organization, setOrganization] = useState(null); // Initialize with null
+const OppDetails = () => {
+  const [event, setEvent] = useState(null); // Initialize with null
   const { id } = useParams(); // Get the organization ID from URL params
 
   useEffect(() => {
-    const fetchOrganization = async () => {
+    const fetchEvents = async () => {
       try {
-        const res = await getSingleOrganizationApi(id); // Adjust API function to accept ID parameter
-        setOrganization(res.data.organization); // Assuming API returns a single organization object within an 'organization' key
+        const res = await getSingleEventApi(id); // Adjust API function to accept ID parameter
+        setEvent(res.data.event); // Assuming API returns a single event object within an 'event' key
       } catch (err) {
-        console.error("Error fetching organization:", err);
-        setOrganization(null); // Set organization to null on error
+        console.error("Error fetching event:", err);
+        setEvent(null); // Set event to null on error
       }
     };
 
-    fetchOrganization();
+    fetchEvents();
   }, [id]); // Fetch data whenever `id` changes
 
-  if (!organization) {
-    return <p>Organization not found</p>; // Display a message if organization is null or undefined
+  if (!event) {
+    return <p>Event not found</p>; // Display a message if event is null or undefined
   }
 
   return (
-    <div className="organization-details-page">
+    <div className="event-details-page">
       <style jsx>{`
-        .organization-details-page {
+        .event-details-page {
           display: flex;
         }
 
@@ -76,28 +73,47 @@ const OrganizationDetails = () => {
           color: #333; /* Use a dark color for the text on hover/active */
         }
 
-        .organization-content {
-          flex-grow: 1;
-          padding: 90px;
+        .event-details {
+          flex: 1;
+          padding: 35px;
+          overflow-y: auto;
         }
 
-        .organization-image {
+        .event-header {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .event-image {
           width: 100%;
+          max-width: 600px;
           height: auto;
-          max-width: 300px;
+          border-radius: 8px;
+        }
+
+        .event-title {
+          font-size: 2em;
+          margin: 20px 0;
+        }
+
+        .event-info {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px;
+          justify-content: center;
           margin-bottom: 20px;
         }
 
-        .organization-name {
-          font-size: 24px;
-          font-weight: bold;
-          margin-bottom: 10px;
+        .event-info div {
+          padding: 10px;
+          border: 1px solid #ddd;
+          border-radius: 5px;
+          background-color: #f9f9f9;
         }
 
-        .organization-description {
-          font-size: 16px;
-          color: #555;
-          text-align: justify;
+        .event-details-text {
+          line-height: 1.6;
         }
       `}</style>
 
@@ -125,18 +141,21 @@ const OrganizationDetails = () => {
         </ul>
       </nav>
 
-          <div className="organization-content">
-          {/* <h1 className="organization-name">{organization.organizationName}</h1> */}
-
-        <img
-          src={organization.organizationImageUrl}
-          alt={organization.organizationName}
-          className="organization-image"
-        />
-        <p className="organization-description">{organization.organizationDetails}</p>
+      <div className="event-details">
+        <div className="event-header">
+          <img src={event.eventImageUrl} alt="Event" className="event-image" />
+          <h1 className="event-title">{event.eventName}</h1>
+        </div>
+        <div className="event-info">
+          <div><strong>Organizer:</strong> {event.organizer}</div>
+          <div><strong>Volunteers:</strong> {event.volunteers}</div>
+          <div><strong>Location:</strong> {event.location}</div>
+          <div><strong>Time:</strong> {event.time}</div>
+        </div>
+        <p className="event-details-text">{event.eventDetails}</p>
       </div>
     </div>
   );
 };
 
-export default OrganizationDetails;
+export default OppDetails;

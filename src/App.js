@@ -172,6 +172,8 @@ import AdminChat from './pages/admin/AdminChat';
 import AdminOrganization from './pages/admin/AdminOrganization';
 import OrganizationDetails from './pages/user/OrganizationDetails';
 import EventList from './pages/user/EventGet';
+import EventDetails from './pages/user/EventDetails';
+import OppDetails from './pages/user/OppDetails';
 
 function App() {
   return (
@@ -195,10 +197,13 @@ function App() {
         <Route path="/donation/:id" element={<DonationDetails />} /> {/* Donation detail route */}
         <Route path="/profile" element={<Profile />} />
         <Route path="/admin/event" element={<AdminEvent />} />
-        {/* <Route path="/chat" element={<Chat />} /> */}
+        <Route path="/chat" element={<Chat />} />
         {/* <Route path="/admin/chat" element={<AdminChat />} /> */}
         <Route path="/admin/organization" element={<AdminOrganization />} />
         <Route path="/get_events" element={<EventList />} />
+        <Route path="/eventDetails" element={<EventDetails />} />
+        <Route path="/oppDetails/:id" element={<OppDetails />} />
+
 
         <Route path="/organization/:id" element={<OrganizationDetails />} /> {/* Donation detail route */}
 

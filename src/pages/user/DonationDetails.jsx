@@ -217,16 +217,6 @@ const DonationDetails = () => {
           <img src={donation.donationImageUrl} alt={donation.donationName} />
           <h1>{donation.donationName}</h1>
           <p className="donor-name">By {donation.donor}</p>
-          <div className="donation-progress">
-            <div
-              className="donation-progress-bar"
-              style={{ width: `${donation.percentage}%` }}
-            ></div>
-          </div>
-          <div className="target-raised">
-            <p>Target: Rs {donation.target}</p>
-            <p>Raised: Rs {donation.raised}</p>
-          </div>
           <div className="donation-summary">
             <div className="donors">
               <img src="/path/to/donor1.png" alt="Donor 1" />
@@ -239,6 +229,17 @@ const DonationDetails = () => {
                       </div>
                       
                   </div>
+          <div className="donation-progress">
+            <div
+              className="donation-progress-bar"
+              style={{ width: `${donation.percentage}%` }}
+            ></div>
+          </div>
+          <div className="target-raised">
+            <p>Target: Rs {donation.target}</p>
+            <p>Raised: Rs {donation.raised}</p>
+          </div>
+         
                   
         </div>
         <div className="donation-right">
