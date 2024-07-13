@@ -3,8 +3,10 @@
 import React from "react";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer"; // Import the Footer component
+import ProjectSummary from "./ProjectSummary";
+import ComProject from "./ComProject";
 
-const WomenEmpowerment = () => {
+const CommunityHealth = () => {
   const styles = {
     container: {
       display: "flex",
@@ -75,7 +77,7 @@ const WomenEmpowerment = () => {
       <Navbar />
       <div style={styles.container}>
         <div style={styles.content}>
-          <h1>Women Education, Rights and Life Skills</h1>
+          <h1>Public Health and Medical Care </h1>
           <div style={styles.imageTextContainer}>
             <img
               src="assets/images/women.jpg"
@@ -84,86 +86,58 @@ const WomenEmpowerment = () => {
             />
             <div style={styles.text}>
               <p>
-                “If you really want to change a culture, to empower women,
-                improve basic hygiene and health care, and fight high rates of
-                infant mortality, the answer is to educate girls.” – Greg
-                Mortenson in Three Cups of Tea
-              </p>
+                              VIN Community Health & Medical Care Program aims to improve conditions
+                              through relevant education, services and public awareness programs.
+                              The volunteers’ skills and interests, as well as the assessed needs of the community,
+                              will act as a guide to making each program relevant and beneficial.
+                          </p>
+                          <p>VIN provides qualified doctors and nurses to staff local health clinics.
+                              Medical internships in Nepal allow you to assist in reviewing patients at the
+                              clinic, helping the staff and providing training, depending on their level of expertise.
+                              The health clinic is open daily with a doctor present three days each week.</p>
               <p>
-                VolunteerVerse believes in the equal opportunities of women in
-                Nepal, therefore we have created a variety of projects which
-                assist women to overcome current adversity to not only survive,
-                but thrive in society. According to UNESCO only 44.5 per cent of
-                Nepali females are literate, at disparate odds from their 77.6
-                per cent of their male counterparts. Through this program VIN
-                volunteers have a chance to assist women’s empowerment, by
-                boosting literacy and skills.
+                              Community Health Education can sustainably improve the health of a community and is at the heart
+                              of VIN’s health projects. Various sessions are provided for women’s groups, children’s groups,
+                              as well as at schools. During a medical internship in Nepal the volunteer will formulate and run
+                              health education sessions alongside local translators. Volunteers are also involved in designing
+                              and conducting VIN assisted health surveys and diagnostic research to ensure optimum outcomes.
               </p>
             </div>
           </div>
-          <p>
-            Many challenges within the community stem from the fact that
-            educated men tend to leave their communities to find work, while
-            women stay home. A locally based women’s empowerment program has the
-            potential to transform these women into powerful force within their
-            community. VIN understands that the future of many communities lies
-            in the hands of empowered female leaders, who may share their
-            knowledge in the communities’ best interests.
-          </p>
-          <div style={styles.objectivesHeader}>Objectives</div>
-          <ul style={styles.objectivesList}>
-            <li style={styles.objectivesListItem}>Family health</li>
-            <li style={styles.objectivesListItem}>Women’s rights</li>
-            <li style={styles.objectivesListItem}>Access to resources</li>
-            <li style={styles.objectivesListItem}>Income generation</li>
-          </ul>
-          <p>
-            Volunteers have the opportunity to exchange ideas, collaborate in
-            ongoing projects, teach Basic English skills, help with small
-            businesses, and be positive role models. You can also provide
-            support in many other ways, depending on your skills and interests
-            and the needs of the local community.
-          </p>
-          <div style={styles.objectivesHeader}>
-            VolunteerVerse women’s empowerment program includes:
-          </div>
-          <ul style={styles.objectivesList}>
-            <li style={styles.objectivesListItem}>
-              Education (Literacy), rights and life skills
-            </li>
-            <li style={styles.objectivesListItem}>
-              Saving and credit – micro-credit through cooperatives
-            </li>
-            <li style={styles.objectivesListItem}>
-              Income generative skills training
-            </li>
-            <li style={styles.objectivesListItem}>
-              Women’s health and maternity education
-            </li>
-            <li style={styles.objectivesListItem}>
-              Teaching English Language to young women
-            </li>
-          </ul>
+                  <h1>Current Health Issues</h1>
+                  <p>Rural Nepali are often reluctant to receive contemporary health services because of superstitious
+                      belief systems as well as other cultural influences.
+                      This in turn often leads to fatalities from preventable illness.
+                      Medical internships in Nepal are an opportunity to illustrate the importance and benefits of making
+                      the transition towards conventional medicine.</p>
+                  
+                  <p>Many of the health problems stem from a lack of basic hygiene practice and facilities.
+                      VIN has supported toilet construction within the community, and recent research has shown
+                      significant benefits achieved through this project, but education is still needed to encourage
+                      the change of behavioural habits.</p>
+                  
+<p>VIN welcomes interested medical students, professionals, or organisations to join our Community Health and Medical Care Program.</p>
 
-          <h1>Achievements</h1>
-          <p>
-            In 2013 VIN taught 118 women through literacy classes, and over 500
-            since its inception in 2004. These classes were taught in
-            partnership with local teachers and overseen by the women’s
-            empowerment program to ensure a standard quality of teaching. Women
-            must to be able to speak good English if they wish access career
-            options through the internet, but also to impress locally based
-            multinational companies. Education is also a tool through which
-            discrimination of women in Nepal can be ended. Your role may be to
-            illustrate how learning English leads to an exposure of outside
-            knowledge and ideas. Discriminated women within the program receive
-            skills-orientated training so that they may independently generate
-            income through projects such as vegetable farming (organic and
-            non-organic), livestock, sewing and carving, incense and candle
-            making, and dry food processing. So, if you have the skills to
-            produce marketable items and would like to help women in these
-            communities overcome discrimination, let us know!
-          </p>
+
+          <div style={styles.objectivesHeader}>How we do it:</div>
+          <ul style={styles.objectivesList}>
+            <li style={styles.objectivesListItem}>Health Institutions:  Volunteers are assigned to health institutions either run by the government or local community, both in rural and urban settings. Medical volunteers will work three to five hours a day, Monday to Friday.</li>
+            <li style={styles.objectivesListItem}>Health Camps:  Medical Volunteers will be mobilised to work in health camps for a prearranged schedule: 1 day to a week. Local medical professionals operate within VIN, so as to assist volunteers. Volunteers’ responsibilities range from distributing medicine, consulting citizens about appropriate health care awareness.</li>
+            <li style={styles.objectivesListItem}>Health Awareness Programs: Many Nepali people are unaware of health and hygiene and environmental issues. We therefore mobilise local and international medical volunteers mainly to work with the youth clubs, women’s groups, children’s clubs, women microcredit cooperatives, and other local organisations to teach them about proper health and sanitation habits. VIN aims to prepare local health advocates by training the local groups of women, youth, teachers and children.</li>
+            
+          </ul>
+         
+          
+                  <ComProject /> 
+                  
+                  
+
+                
+                      
+
+
+
+
         </div>
         <div style={styles.sidebar}>
           <h2 style={styles.sidebarHeader}>Other Volunteering Programs</h2>
@@ -281,4 +255,4 @@ const WomenEmpowerment = () => {
   );
 };
 
-export default WomenEmpowerment;
+export default CommunityHealth;

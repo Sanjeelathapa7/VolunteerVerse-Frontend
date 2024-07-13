@@ -1,10 +1,11 @@
-
-
 import React from "react";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer"; // Import the Footer component
+import ComProject from "./ComProject";
+import Com from "./Com";
+import D from "./D";
 
-const WomenEmpowerment = () => {
+const DRR = () => {
   const styles = {
     container: {
       display: "flex",
@@ -75,7 +76,7 @@ const WomenEmpowerment = () => {
       <Navbar />
       <div style={styles.container}>
         <div style={styles.content}>
-          <h1>Women Education, Rights and Life Skills</h1>
+          <h1>DRR Research Volunteer </h1>
           <div style={styles.imageTextContainer}>
             <img
               src="assets/images/women.jpg"
@@ -84,86 +85,42 @@ const WomenEmpowerment = () => {
             />
             <div style={styles.text}>
               <p>
-                “If you really want to change a culture, to empower women,
-                improve basic hygiene and health care, and fight high rates of
-                infant mortality, the answer is to educate girls.” – Greg
-                Mortenson in Three Cups of Tea
+                DRR Research Volunteer Project aims to analysis and identifying
+                the socio-economic vulnerabilities caused by a disaster among
+                particular groups of people.
               </p>
               <p>
-                VolunteerVerse believes in the equal opportunities of women in
-                Nepal, therefore we have created a variety of projects which
-                assist women to overcome current adversity to not only survive,
-                but thrive in society. According to UNESCO only 44.5 per cent of
-                Nepali females are literate, at disparate odds from their 77.6
-                per cent of their male counterparts. Through this program VIN
-                volunteers have a chance to assist women’s empowerment, by
-                boosting literacy and skills.
+                Nepal is a hub for natural disasters and every year thousands of
+                people lose their life due to flood, landslide, earthquake,
+                avalanche etc. And yet, many structures in Nepal are unsafe for
+                human use. Many houses that had been destroyed by the earthquake
+                in 2012 are still inhibited by people. We see numerous schools
+                in rural areas with hazardous cracks on the walls. Many
+                buildings are held together by bamboo and wood. Effective study
+                and research is important to develop seismic resilient
+                structures. However, the Government of Nepal has not been able
+                to focus on this arena of development.
               </p>
             </div>
           </div>
+          <h1>What will be your role?</h1>
           <p>
-            Many challenges within the community stem from the fact that
-            educated men tend to leave their communities to find work, while
-            women stay home. A locally based women’s empowerment program has the
-            potential to transform these women into powerful force within their
-            community. VIN understands that the future of many communities lies
-            in the hands of empowered female leaders, who may share their
-            knowledge in the communities’ best interests.
+                      During your placement, you will be placed in one of the VIN host program locations,
+                      either in Kathmandu, Nuwakot or Okhaldunga.  You will be organizing disaster risk reduction research
+                      in various locations. You will be visiting various schools and community buildings to analyse the condition
+                      of building. You will help the community people develop a disaster risk reduction plan.
+                      As a DRR research volunteer you will conduct a wide-ranging study in the sector of Disaster Management
+                      and ways to tackle the after-effects of a tragedy. You will also develop plans and approaches to mitigate
+                      the long-lasting effects of natural hazards.
           </p>
-          <div style={styles.objectivesHeader}>Objectives</div>
-          <ul style={styles.objectivesList}>
-            <li style={styles.objectivesListItem}>Family health</li>
-            <li style={styles.objectivesListItem}>Women’s rights</li>
-            <li style={styles.objectivesListItem}>Access to resources</li>
-            <li style={styles.objectivesListItem}>Income generation</li>
-          </ul>
-          <p>
-            Volunteers have the opportunity to exchange ideas, collaborate in
-            ongoing projects, teach Basic English skills, help with small
-            businesses, and be positive role models. You can also provide
-            support in many other ways, depending on your skills and interests
-            and the needs of the local community.
-          </p>
-          <div style={styles.objectivesHeader}>
-            VolunteerVerse women’s empowerment program includes:
-          </div>
-          <ul style={styles.objectivesList}>
-            <li style={styles.objectivesListItem}>
-              Education (Literacy), rights and life skills
-            </li>
-            <li style={styles.objectivesListItem}>
-              Saving and credit – micro-credit through cooperatives
-            </li>
-            <li style={styles.objectivesListItem}>
-              Income generative skills training
-            </li>
-            <li style={styles.objectivesListItem}>
-              Women’s health and maternity education
-            </li>
-            <li style={styles.objectivesListItem}>
-              Teaching English Language to young women
-            </li>
-          </ul>
+<Com/>
+          <h1>Who Can Apply?</h1>
 
-          <h1>Achievements</h1>
-          <p>
-            In 2013 VIN taught 118 women through literacy classes, and over 500
-            since its inception in 2004. These classes were taught in
-            partnership with local teachers and overseen by the women’s
-            empowerment program to ensure a standard quality of teaching. Women
-            must to be able to speak good English if they wish access career
-            options through the internet, but also to impress locally based
-            multinational companies. Education is also a tool through which
-            discrimination of women in Nepal can be ended. Your role may be to
-            illustrate how learning English leads to an exposure of outside
-            knowledge and ideas. Discriminated women within the program receive
-            skills-orientated training so that they may independently generate
-            income through projects such as vegetable farming (organic and
-            non-organic), livestock, sewing and carving, incense and candle
-            making, and dry food processing. So, if you have the skills to
-            produce marketable items and would like to help women in these
-            communities overcome discrimination, let us know!
-          </p>
+                  <p>Anyone with knowledge and experience in DRR can apply for this project.
+                      You should have good facilitation and communication skills as you will be working with community people.
+                      Research skill will be an added advantage.</p>
+
+          <D />
         </div>
         <div style={styles.sidebar}>
           <h2 style={styles.sidebarHeader}>Other Volunteering Programs</h2>
@@ -249,7 +206,9 @@ const WomenEmpowerment = () => {
               style={styles.programImage}
             />
             <div style={styles.programContent}>
-              <div style={styles.programTitle}>Volunteer for Street Children</div>
+              <div style={styles.programTitle}>
+                Volunteer for Street Children
+              </div>
               <div style={styles.programDescription}>
                 Volunteer for Street Children in Nepal Project aims to give
                 support, care and guidance to the most neglected section of
@@ -268,9 +227,9 @@ const WomenEmpowerment = () => {
                 Volunteer for the Elderly People
               </div>
               <div style={styles.programDescription}>
-                Volunteer for the Elderly People in Nepal Project aims to protect
-                and promote the wellbeing of the aging population. As you walk
-                on...
+                Volunteer for the Elderly People in Nepal Project aims to
+                protect and promote the wellbeing of the aging population. As
+                you walk on...
               </div>
             </div>
           </div>
@@ -281,4 +240,4 @@ const WomenEmpowerment = () => {
   );
 };
 
-export default WomenEmpowerment;
+export default DRR;

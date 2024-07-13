@@ -8,7 +8,7 @@ const Whatwedo = () => {
     flexDirection: 'column',
     alignItems: 'center',
     padding: '20px',
-    fontFamily: 'Arial, sans-serif',
+    fontFamily:"InkutAntiqua"
   };
 
   const imageSectionStyle = {
@@ -32,12 +32,15 @@ const Whatwedo = () => {
   const headingStyle = {
     fontSize: '24px',
     marginBottom: '10px',
+    fontFamily:"InkutAntiqua"
   };
 
   const paragraphStyle = {
     fontSize: '16px',
     lineHeight: '1.5',
     marginBottom: '5vh',
+    fontFamily:"Inder"
+
   };
 
   return (

@@ -3,8 +3,10 @@
 import React from "react";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer"; // Import the Footer component
+import ProjectSummary from "./ProjectSummary";
+import TeachingProject from "./TeachingProject";
 
-const WomenEmpowerment = () => {
+const Teaching = () => {
   const styles = {
     container: {
       display: "flex",
@@ -75,7 +77,7 @@ const WomenEmpowerment = () => {
       <Navbar />
       <div style={styles.container}>
         <div style={styles.content}>
-          <h1>Women Education, Rights and Life Skills</h1>
+          <h1>Teaching English in Community Schools</h1>
           <div style={styles.imageTextContainer}>
             <img
               src="assets/images/women.jpg"
@@ -84,86 +86,57 @@ const WomenEmpowerment = () => {
             />
             <div style={styles.text}>
               <p>
-                “If you really want to change a culture, to empower women,
-                improve basic hygiene and health care, and fight high rates of
-                infant mortality, the answer is to educate girls.” – Greg
-                Mortenson in Three Cups of Tea
+                              English Teaching in Nepali Community Schools Program targets international volunteers who
+                              are looking to take part in a hands-on, Nepali classroom experience.
               </p>
               <p>
-                VolunteerVerse believes in the equal opportunities of women in
-                Nepal, therefore we have created a variety of projects which
-                assist women to overcome current adversity to not only survive,
-                but thrive in society. According to UNESCO only 44.5 per cent of
-                Nepali females are literate, at disparate odds from their 77.6
-                per cent of their male counterparts. Through this program VIN
-                volunteers have a chance to assist women’s empowerment, by
-                boosting literacy and skills.
-              </p>
+                              In these local schools, you as a volunteer will not only teach the English language,
+                              but will also engage in an effort to teach the children how to apply those language skills
+                              in various extracurricular activities.
+                          </p>
+                          <p>VIN believes that by doing this, the children will have a better grasp of English and will be
+                              able to use what they know, in real life situations, where communication is core. With your help,
+                                VIN hopes to deliver the children and their local communities a crucial life skill: the English language. Acquiring this life skill has huge implications for Nepali, more that you might think. Knowing English is key to a more internationally connected Nepal, as well as opening the door for career opportunities.</p>
             </div>
-          </div>
+                  </div>
+                  <h1>Problems Faced by Nepalese Migrant Workers</h1>
           <p>
-            Many challenges within the community stem from the fact that
-            educated men tend to leave their communities to find work, while
-            women stay home. A locally based women’s empowerment program has the
-            potential to transform these women into powerful force within their
-            community. VIN understands that the future of many communities lies
-            in the hands of empowered female leaders, who may share their
-            knowledge in the communities’ best interests.
+                      Out of a population of 27 million, over 4 million Nepali work abroad,
+                      in places such as the Middle-East and Malaysia. Since the year 2000 it is estimated that 10,000
+                      have died abroad from a range of issues associated with poor conditions. VIN sees education as the
+                      key to empowering children to make informed decisions about their future and that of their country.
+                      The benefits of this knowledge is that it protects the individual, limits the very real risk of exploitation,
+                      and is conducive to positive progress.
           </p>
-          <div style={styles.objectivesHeader}>Objectives</div>
-          <ul style={styles.objectivesList}>
-            <li style={styles.objectivesListItem}>Family health</li>
-            <li style={styles.objectivesListItem}>Women’s rights</li>
-            <li style={styles.objectivesListItem}>Access to resources</li>
-            <li style={styles.objectivesListItem}>Income generation</li>
-          </ul>
-          <p>
-            Volunteers have the opportunity to exchange ideas, collaborate in
-            ongoing projects, teach Basic English skills, help with small
-            businesses, and be positive role models. You can also provide
-            support in many other ways, depending on your skills and interests
-            and the needs of the local community.
-          </p>
-          <div style={styles.objectivesHeader}>
-            VolunteerVerse women’s empowerment program includes:
-          </div>
-          <ul style={styles.objectivesList}>
-            <li style={styles.objectivesListItem}>
-              Education (Literacy), rights and life skills
-            </li>
-            <li style={styles.objectivesListItem}>
-              Saving and credit – micro-credit through cooperatives
-            </li>
-            <li style={styles.objectivesListItem}>
-              Income generative skills training
-            </li>
-            <li style={styles.objectivesListItem}>
-              Women’s health and maternity education
-            </li>
-            <li style={styles.objectivesListItem}>
-              Teaching English Language to young women
-            </li>
-          </ul>
+          
 
-          <h1>Achievements</h1>
+          <h1>What to Teach</h1>
           <p>
-            In 2013 VIN taught 118 women through literacy classes, and over 500
-            since its inception in 2004. These classes were taught in
-            partnership with local teachers and overseen by the women’s
-            empowerment program to ensure a standard quality of teaching. Women
-            must to be able to speak good English if they wish access career
-            options through the internet, but also to impress locally based
-            multinational companies. Education is also a tool through which
-            discrimination of women in Nepal can be ended. Your role may be to
-            illustrate how learning English leads to an exposure of outside
-            knowledge and ideas. Discriminated women within the program receive
-            skills-orientated training so that they may independently generate
-            income through projects such as vegetable farming (organic and
-            non-organic), livestock, sewing and carving, incense and candle
-            making, and dry food processing. So, if you have the skills to
-            produce marketable items and would like to help women in these
-            communities overcome discrimination, let us know!
-          </p>
+                      In Nepal, each school has its own English teachers who may be available to assist volunteers with teaching methods,
+                      offer advice on solving communication barriers, or simply providing suitable curricula for the classroom.
+                      English teaching volunteers do not have to be native English speakers. During holidays and slow periods,
+                      volunteers can also help local teachers create teaching resources and design effective lessons plans,
+                      as well as co-teach certain lessons. This offers a new opportunity of learning and exchanging ideas on
+                      educational practice.
+                  </p>
+                  <p>Due to the lack of resources and other disturbances, schools are often closed, sometimes for days at a time.
+                      Therefore, it is very important that volunteers provide English lessons after school, for groups of all ages,
+                      so that children can continue their studies as well as simply have something productive to do with their time.
+                      These classes also reach out to those in the community who cannot attend formal school, either because of
+                      financial difficulties or other responsibilities.
+
+</p>
+                  
+                  <TeachingProject /> 
+                  
+                  
+
+                
+                      
+
+
+
+
         </div>
         <div style={styles.sidebar}>
           <h2 style={styles.sidebarHeader}>Other Volunteering Programs</h2>
@@ -281,4 +254,4 @@ const WomenEmpowerment = () => {
   );
 };
 
-export default WomenEmpowerment;
+export default Teaching;

@@ -674,6 +674,7 @@ import { getAllDonationsApi, getAllOrganizationsApi } from "../../apis/Apis";
 const Dashboard = () => {
   const [donations, setDonations] = useState([]);
   const [organizations, setOrganizations] = useState([]);
+  const user = JSON.parse(localStorage.getItem("user"));
 
   useEffect(() => {
     getAllDonationsApi()
@@ -866,7 +867,7 @@ const Dashboard = () => {
             <a href="/chat">Chat</a>
           </li>
           <li>
-            <a href="#">Performance</a>
+            <a href="/performance">Performance</a>
           </li>
           <li>
             <a href="/profile">Profile</a>
@@ -874,7 +875,7 @@ const Dashboard = () => {
         </ul>
       </nav>
       <main>
-        <h1>Hi, User</h1>
+        <h1>Welcome, {user.fullName ? user.fullName.split(" ")[0] : ""}!{" "}user ?</h1>
         <p>Your move makes someone's life better!</p>
         <input type="text" placeholder="Search organizations" className="search-bar" />
         <div className="donation-section">

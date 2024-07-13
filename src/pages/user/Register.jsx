@@ -58,12 +58,12 @@ const Register = () => {
 
   return (
     <div className="overflow-hidden">
-    <div className="register-container row vh-100 align-items-center">
+    <div className="register-container row vh-100 align-items-center ">
       <div className="register-box col-md-7 my-3">
         {/* Left side with image */}
         <div className="register-image col-md-6">
           <img
-            src="/assets/images/login.jpg"
+            src="/assets/images/r.png"
             alt="Volunteers"
             className="image-fluid"
             style={{ width: "100%", height: "100%" }}
@@ -117,7 +117,7 @@ const Register = () => {
             <button onClick={handleSubmit} className="btn-submit" type="submit">
               Register
             </button>
-            <p className="login-link text-font">
+            <p className="login-link text-font ">
               Already have an account? <a href="/login">Log in</a>
             </p>
           </form>

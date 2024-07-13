@@ -3,8 +3,10 @@
 import React from "react";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer"; // Import the Footer component
+import ProjectSummary from "./ProjectSummary";
+import ChildProject from "./ChildProject";
 
-const WomenEmpowerment = () => {
+const ChildrenDevelopment = () => {
   const styles = {
     container: {
       display: "flex",
@@ -75,7 +77,7 @@ const WomenEmpowerment = () => {
       <Navbar />
       <div style={styles.container}>
         <div style={styles.content}>
-          <h1>Women Education, Rights and Life Skills</h1>
+          <h1>Youth Club and Life Skills</h1>
           <div style={styles.imageTextContainer}>
             <img
               src="assets/images/women.jpg"
@@ -84,86 +86,108 @@ const WomenEmpowerment = () => {
             />
             <div style={styles.text}>
               <p>
-                “If you really want to change a culture, to empower women,
-                improve basic hygiene and health care, and fight high rates of
-                infant mortality, the answer is to educate girls.” – Greg
-                Mortenson in Three Cups of Tea
-              </p>
+                            
+                              “Learning starts from right at birth. Child Care at the Early Childhood Development (ECD) program
+                              fosters a congenial learning environment for children of 3 to 5 years of age to develop motor,
+                              mental, social and emotional skills.”
+                          </p>
+                          <h1>Volunteerverse's Mission for Early Childhood Development</h1>
               <p>
-                VolunteerVerse believes in the equal opportunities of women in
-                Nepal, therefore we have created a variety of projects which
-                assist women to overcome current adversity to not only survive,
-                but thrive in society. According to UNESCO only 44.5 per cent of
-                Nepali females are literate, at disparate odds from their 77.6
-                per cent of their male counterparts. Through this program VIN
-                volunteers have a chance to assist women’s empowerment, by
-                boosting literacy and skills.
+                              At Volunteerverse we believe in lasting change, therefore it is vital that we invest in our young children
+                              for the Nepal of tomorrow. Due to the isolated nature of Nepalese mountain villages, institutions such as
+                              local schools are still inaccessible for many children. As a result many children lack basic communicative
+                              and social skills. Volunteerverse therefore aims to equip school-based Early Childhood Development (ECD) centres
+                              and for the first time, provide effective education institutes for the Nepali in rural areas.
+                              At Volunteerverse we believe in creating an engaging program, since we feel that learning should be fun.
+                              With teachers we discuss how to make creative and engaging classes for children.
+                              Additional support comes in the form of curriculum which was written in partnership with our partners
+                              in Sustainable Learning from the United States.
               </p>
             </div>
-          </div>
+                  </div>
+                  <h1>Issue Nepal is Facing </h1>
           <p>
-            Many challenges within the community stem from the fact that
-            educated men tend to leave their communities to find work, while
-            women stay home. A locally based women’s empowerment program has the
-            potential to transform these women into powerful force within their
-            community. VIN understands that the future of many communities lies
-            in the hands of empowered female leaders, who may share their
-            knowledge in the communities’ best interests.
-          </p>
-          <div style={styles.objectivesHeader}>Objectives</div>
+                      Issue Nepal is FacinAlthough we hear “encouragement” of Early Childhood Development from a seemingly confident government,
+                      on the ground their intentions have not matched outcomes. While some regions in Nepal may appear to have access
+                      to ECD centres the reality is that many regions lack the qualified teachers and materials to run them efficiently.
+                      VIN first initiated a community based Early Childhood Development Centre (ECD) at Panchmane Community, Jitpur, Kathmandu.
+                      We have, on average, 16 to 20 children each year; between 4 to 6 years of age, benefiting from this program.
+                      We have constructed a 3 room building in partnership with the community and equipped it with child friendly
+                      furniture and materials. This centre has been established in partnership with the government District Education Office.
+                      Now VIN funds and runs over 30 Early Childhood Development centers (ECD) in the outskirt of Kathmandu, Okhaldhunga and Nuwakot.
+</p>
+
+                      <h1>Achievements</h1>
+                      <p>VIN now supports over 30 early childhood education centres in schools and communities in
+                          impoverished Nepalese communities. VIN estimates equipping each centre on average will cost $700,
+                          but with our partners’ help we can continue to establish more centres around Nepal.
+                          Individuals or organisations interested in lending a helping hand are greatly appreciated.
+                      Support from abroad or directly become a part of this empowering project!</p>
+                  <p>
+                  “After VIN’s orientation to the ECD parents, now our kids are neat and clean and most of the children are bringing lunch from their own homes”
+                  </p>
+
+
+                  
+          <div style={styles.objectivesHeader}>How Can I Help?</div>
+          
           <ul style={styles.objectivesList}>
-            <li style={styles.objectivesListItem}>Family health</li>
-            <li style={styles.objectivesListItem}>Women’s rights</li>
-            <li style={styles.objectivesListItem}>Access to resources</li>
-            <li style={styles.objectivesListItem}>Income generation</li>
+            <li style={styles.objectivesListItem}>Assist local teachers.</li>
+            <li style={styles.objectivesListItem}>Teach children motor and kinaesthetic skills.</li>
+            <li style={styles.objectivesListItem}>Play games and rhymes with children.</li>
+            <li style={styles.objectivesListItem}>Supervise sports activities.</li>
+            <li style={styles.objectivesListItem}>Provide child care support.</li>
+            <li style={styles.objectivesListItem}>Create teaching/learning resources.</li>
+            <li style={styles.objectivesListItem}>Organise student excursions. </li>
           </ul>
-          <p>
-            Volunteers have the opportunity to exchange ideas, collaborate in
-            ongoing projects, teach Basic English skills, help with small
-            businesses, and be positive role models. You can also provide
-            support in many other ways, depending on your skills and interests
-            and the needs of the local community.
-          </p>
-          <div style={styles.objectivesHeader}>
-            VolunteerVerse women’s empowerment program includes:
+                  <h1>Who can apply?</h1>
+                  <p>
+                      Anybody who has a strong interest in supporting children from the most marginalised communities
+                      and who enjoys working with young children. Prior experience in Montessori or early childhood
+                      education methods will be an advantage. Lacking confidence? Not to worry, VIN provides an orientation
+                      course for participants before any placement ensuring a smooth transition into the classroom.
+
+                  </p>
+
+                  <h1>More about ECD Program</h1>
+                  <p>
+                  Aspects of Children’s Rights Addressed:   Right to Education, Right to Development & Right to Participation
+
+
+
+                  </p>
+                 
+                  <div style={styles.objectivesHeader}>
+                      Problem Addressed
           </div>
           <ul style={styles.objectivesList}>
             <li style={styles.objectivesListItem}>
-              Education (Literacy), rights and life skills
+            Teachers not being able to adopt child friendly teaching/learning approaches in ECD classrooms, which can negatively impact the overall development of children in their early years.
             </li>
             <li style={styles.objectivesListItem}>
-              Saving and credit – micro-credit through cooperatives
+            Related parties (parent and school management) are not always aware of early childhood development education needs and practices, hence are unable to satisfy them. 
             </li>
-            <li style={styles.objectivesListItem}>
-              Income generative skills training
-            </li>
-            <li style={styles.objectivesListItem}>
-              Women’s health and maternity education
-            </li>
-            <li style={styles.objectivesListItem}>
-              Teaching English Language to young women
-            </li>
+           
           </ul>
 
-          <h1>Achievements</h1>
+          <h1>What is the current program for youth?</h1>
           <p>
-            In 2013 VIN taught 118 women through literacy classes, and over 500
-            since its inception in 2004. These classes were taught in
-            partnership with local teachers and overseen by the women’s
-            empowerment program to ensure a standard quality of teaching. Women
-            must to be able to speak good English if they wish access career
-            options through the internet, but also to impress locally based
-            multinational companies. Education is also a tool through which
-            discrimination of women in Nepal can be ended. Your role may be to
-            illustrate how learning English leads to an exposure of outside
-            knowledge and ideas. Discriminated women within the program receive
-            skills-orientated training so that they may independently generate
-            income through projects such as vegetable farming (organic and
-            non-organic), livestock, sewing and carving, incense and candle
-            making, and dry food processing. So, if you have the skills to
-            produce marketable items and would like to help women in these
-            communities overcome discrimination, let us know!
-          </p>
+                      VIN has set up a local youth club at Jitpur community representing all youth from the community.
+                      A variety of activities are conducted at this to empower the rural community youth.
+                      This has been a great platform for the local youth to get involved in career development.
+                      You can learn more about this here.
+                  </p>
+                  
+                  <ChildProject /> 
+                  
+                  
+
+                
+                      
+
+
+
+
         </div>
         <div style={styles.sidebar}>
           <h2 style={styles.sidebarHeader}>Other Volunteering Programs</h2>
@@ -281,4 +305,4 @@ const WomenEmpowerment = () => {
   );
 };
 
-export default WomenEmpowerment;
+export default ChildrenDevelopment;

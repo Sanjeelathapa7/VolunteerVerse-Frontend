@@ -75,7 +75,6 @@ const Contact = () => {
               placeholder="Enter your Message"
             ></textarea>
             <input className="form-control" type="submit" value="send" />
-            {/* <button className="btn btn-primary">Send</button> */}
           </form>
         </div>
       </div>

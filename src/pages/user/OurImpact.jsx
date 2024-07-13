@@ -44,6 +44,7 @@
 import React from 'react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
+import OurIm from './OurIm';
 
 const OurImpact = () => {
   return (
@@ -73,52 +74,11 @@ const OurImpact = () => {
               src="/images/assets/Womenn.jpeg" // Use the uploaded image path here
               style={{ width: "100%", height: "auto", borderRadius: "8px" }}
             />
+          
           </div>
+          
         </div>
-        <div style={{ padding: "20px" }}>
-          <table style={{ width: "100%", borderCollapse: "collapse" }}>
-            <thead>
-              <tr>
-                <th style={{ borderBottom: "1px solid #ccc", padding: "10px", textAlign: "left", backgroundColor: "#f9f9f9" }}>Donation</th>
-                <th style={{ borderBottom: "1px solid #ccc", padding: "10px", textAlign: "left", backgroundColor: "#f9f9f9" }}>Purposes</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td style={{ borderBottom: "1px solid #ccc", padding: "10px" }}>€ 50</td>
-                <td style={{ borderBottom: "1px solid #ccc", padding: "10px" }}>To buy books for a woman in the VSN’s literacy programs, or a woman in the VSN literacy classes</td>
-              </tr>
-              <tr>
-                <td style={{ borderBottom: "1px solid #ccc", padding: "10px" }}>€ 100</td>
-                <td style={{ borderBottom: "1px solid #ccc", padding: "10px" }}>To buy a sewing machine for the VSN’s training programs, or for a woman starting her own business</td>
-              </tr>
-              <tr>
-                <td style={{ borderBottom: "1px solid #ccc", padding: "10px" }}>€ 150</td>
-                <td style={{ borderBottom: "1px solid #ccc", padding: "10px" }}>To pay rent for the women center for a month.</td>
-              </tr>
-              <tr>
-                <td style={{ borderBottom: "1px solid #ccc", padding: "10px" }}>€ 150</td>
-                <td style={{ borderBottom: "1px solid #ccc", padding: "10px" }}>To hire a teacher who teaches 30 underprivileged women for a month</td>
-              </tr>
-              <tr>
-                <td style={{ borderBottom: "1px solid #ccc", padding: "10px" }}>€ 250</td>
-                <td style={{ borderBottom: "1px solid #ccc", padding: "10px" }}>To pay for a woman to take part in a 6 month tailoring training course</td>
-              </tr>
-              <tr>
-                <td style={{ borderBottom: "1px solid #ccc", padding: "10px" }}>€ 250</td>
-                <td style={{ borderBottom: "1px solid #ccc", padding: "10px" }}>To pay for a woman to take part in a 6 month weaving training course</td>
-              </tr>
-              <tr>
-                <td style={{ borderBottom: "1px solid #ccc", padding: "10px" }}>€ 250</td>
-                <td style={{ borderBottom: "1px solid #ccc", padding: "10px" }}>To buy a computer to run computer classes for the women</td>
-              </tr>
-              <tr>
-                <td style={{ borderBottom: "1px solid #ccc", padding: "10px" }}>More than € 1000</td>
-                <td style={{ borderBottom: "1px solid #ccc", padding: "10px" }}>To set up a nice library for the women</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+        <OurIm/>
       </div>
       <Footer />
     </div>

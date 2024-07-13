@@ -174,6 +174,17 @@ import OrganizationDetails from './pages/user/OrganizationDetails';
 import EventList from './pages/user/EventGet';
 import EventDetails from './pages/user/EventDetails';
 import OppDetails from './pages/user/OppDetails';
+import Performance from './pages/user/Performance';
+import YouthEmpowerment from './pages/user/YouthEmpowerment';
+import ProjectSummary from './pages/user/ProjectSummary';
+import ChildrenDevelopment from './pages/user/ChildrenDevelopment';
+import ChildProject from './pages/user/ChildProject';
+import CommunityHealth from './pages/user/CommunityHealth';
+import DRR from './pages/user/DRR';
+import Com from './pages/user/Com';
+import D from './pages/user/D';
+import Teaching from './pages/user/Teaching';
+import OurIm from './pages/user/OurIm';
 
 function App() {
   return (
@@ -184,6 +195,11 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/home" element={<Homepage />} />
         <Route path="/women-empowerment" element={<WomenEmpowerment />} />
+        <Route path="/youth-empowerment" element={<YouthEmpowerment />} />
+        <Route path="/children-development" element={<ChildrenDevelopment />} />
+        <Route path="/community-health" element={<CommunityHealth />} />
+        <Route path="/teaching-english" element={<Teaching />} />
+        <Route path="/drr-research-volunteer" element={<DRR />} />
         <Route path="/sendemail" element={<SendEmail />} />
         <Route path="/resetpassword" element={<ResetPassword />} />
         <Route path="/resetcode" element={<ForgotPasswordCode />} />
@@ -202,6 +218,13 @@ function App() {
         <Route path="/admin/organization" element={<AdminOrganization />} />
         <Route path="/get_events" element={<EventList />} />
         <Route path="/eventDetails" element={<EventDetails />} />
+        <Route path="/performance" element={<Performance />} />
+        <Route path="/project" element={<ProjectSummary />} />
+        <Route path="/child" element={<ChildProject />} />
+        <Route path="/com" element={<Com />} />
+        <Route path="/d" element={<D />} />
+        <Route path="/teaching" element={<Teaching />} />
+        <Route path="/our" element={<OurIm />} />
         <Route path="/oppDetails/:id" element={<OppDetails />} />
 
 
