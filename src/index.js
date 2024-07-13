@@ -1,5 +1,4 @@
-//index.js = mid role khelcha
-// get id = first case id create garcha
+
 
 import React from 'react';
 import ReactDOM from 'react-dom/client';
