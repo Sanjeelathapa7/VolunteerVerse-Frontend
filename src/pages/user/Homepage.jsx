@@ -1,5 +1,3 @@
-
-
 import React from "react";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
@@ -31,60 +29,55 @@ const testimonials = [
 const paragraphStyle = {
   fontFamily: "Inder",
   fontSize: "16px", // Adjust the font size as needed
-  marginTop: "20px" // Adjust the space before the paragraph as needed
+  marginTop: "20px", // Adjust the space before the paragraph as needed
 };
 const pStyle = {
   fontFamily: "Inder",
   fontSize: "16px", // Adjust the font size as needed
   textAlign: "justify",
-  marginTop: "8px"
-}
+  marginTop: "8px",
+};
 
 const rStyle = {
   fontFamily: "Inder",
-  textAlign: "right" ,
+  textAlign: "right",
   textAlign: "justify",
-  marginTop: "8px"
-
-}
+  marginTop: "8px",
+};
 const ourStyle = {
   textAlign: "center",
   marginBottom: "20px",
   fontFamily: "Inknut Antiqua",
-
-}
+};
 
 const headingStyle = {
-  fontFamily:"Inknut Antiqua",
+  fontFamily: "Inknut Antiqua",
   fontSize: "15px",
-  fontWeight:"bold"
-  
-}
+  fontWeight: "bold",
+};
 
 const empStyle = {
   textDecoration: "underline",
-  fontFamily:"Inknut Antiqua",
+  fontFamily: "Inknut Antiqua",
   fontSize: "15px",
-
-}
+};
 const paStyle = {
   fontFamily: "Inder",
   textAlign: "justify",
-  fontSize:'14px',
-  marginTop: "8px"
-}
+  fontSize: "14px",
+  marginTop: "8px",
+};
 const vhStyle = {
-  fontFamily:"Inknut Antiqua",
+  fontFamily: "Inknut Antiqua",
   fontSize: "13px",
-  fontWeight:"bold"
-}
+  fontWeight: "bold",
+};
 
 const vpStyle = {
   fontFamily: "Inder",
-  fontSize:'14px',
-  marginTop: "8px"
-  
-}
+  fontSize: "14px",
+  marginTop: "8px",
+};
 const Homepage = () => {
   return (
     <div style={{ width: "100%", position: "relative" }}>
@@ -109,7 +102,6 @@ const Homepage = () => {
           Whether you're passionate about environmental conservation, social
           justice, education, or humanitarian aid, VolunteerVerse provides a hub
           where you can find meaningful ways to contribute your time and skills.
-          
         </p>
       </div>
 
@@ -132,23 +124,24 @@ const Homepage = () => {
             <div style={{ marginTop: "0px" }}>
               <h2 style={headingStyle}>Volunteer in Nepal</h2>
               <p style={pStyle}>
-                VolunteerVerse is a comprehensive platform dedicated to cultivating a vibrant
-                community of individuals and organizations committed to making a positive impact
-                through volunteerism. At its core, VolunteerVerse functions as a seamless bridge,
-                connecting volunteers with opportunities that resonate with their passions, skills, and availability.
-
-                Utilizing advanced matching algorithms, VolunteerVerse ensures that each volunteer can
-                discover meaningful projects where they can contribute effectively. This not only enhances
-                the volunteer experience but also amplifies the impact of their efforts.
-
-                For organizations, VolunteerVerse offers a suite of powerful tools designed to streamline
-                the volunteer management process. From recruitment to retention, the platform provides innovative
-                solutions that empower organizations to efficiently harness volunteer enthusiasm and dedication.
-                By facilitating smoother operations and fostering deeper engagement, VolunteerVerse supports
-                organizations in achieving their goals and driving meaningful change within their communities.
-
-                
-                
+                VolunteerVerse is a comprehensive platform dedicated to
+                cultivating a vibrant community of individuals and organizations
+                committed to making a positive impact through volunteerism. At
+                its core, VolunteerVerse functions as a seamless bridge,
+                connecting volunteers with opportunities that resonate with
+                their passions, skills, and availability. Utilizing advanced
+                matching algorithms, VolunteerVerse ensures that each volunteer
+                can discover meaningful projects where they can contribute
+                effectively. This not only enhances the volunteer experience but
+                also amplifies the impact of their efforts. For organizations,
+                VolunteerVerse offers a suite of powerful tools designed to
+                streamline the volunteer management process. From recruitment to
+                retention, the platform provides innovative solutions that
+                empower organizations to efficiently harness volunteer
+                enthusiasm and dedication. By facilitating smoother operations
+                and fostering deeper engagement, VolunteerVerse supports
+                organizations in achieving their goals and driving meaningful
+                change within their communities.
               </p>
             </div>
           </div>
@@ -195,11 +188,7 @@ const Homepage = () => {
             marginTop: "30px",
           }}
         >
-          <h1
-            style={ourStyle}
-          >
-            Our Volunteer and Internship Placements
-          </h1>
+          <h1 style={ourStyle}>Our Volunteer and Internship Placements</h1>
           <div
             style={{
               display: "flex",
@@ -215,10 +204,7 @@ const Homepage = () => {
                 style={{ width: "100%", height: "auto" }}
               />
               <h2>
-                <Link
-                  to="/women-empowerment"
-                  style={empStyle}
-                >
+                <Link to="/women-empowerment" style={empStyle}>
                   Women Empowerment
                 </Link>
               </h2>
@@ -235,10 +221,7 @@ const Homepage = () => {
                 style={{ width: "100%", height: "64%" }}
               />
               <h2>
-                <Link
-                  to="/youth-empowerment"
-                  style={empStyle}
-                >
+                <Link to="/youth-empowerment" style={empStyle}>
                   Youth Empowerment
                 </Link>
               </h2>
@@ -254,10 +237,7 @@ const Homepage = () => {
                 style={{ width: "100%", height: "64%" }}
               />
               <h2>
-                <Link
-                  to="/children-development"
-                  style={empStyle}
-                >
+                <Link to="/children-development" style={empStyle}>
                   Children Development
                 </Link>
               </h2>
@@ -281,7 +261,7 @@ const Homepage = () => {
                 <img
                   src="/assets/images/Com.jpg"
                   alt="Community Health"
-                  style={{ width: "100%", height: "63", marginTop:'10px' }}
+                  style={{ width: "100%", height: "64%", marginTop: "10px" }}
                 />
                 <h2>
                   <Link
@@ -350,7 +330,7 @@ const Homepage = () => {
           }}
         >
           <h1 style={headingStyle}>What Our Volunteers Say?</h1>
-          <p className="text-font" style={{ marginTop: '15px' }}>
+          <p className="text-font" style={{ marginTop: "15px" }}>
             Learn more about the experience of volunteering in Nepal with us
             through the testimonials of our past volunteers.
           </p>
@@ -394,7 +374,9 @@ const Homepage = () => {
                   />
                 </div>
                 <h2 style={vhStyle}>{testimonial.name}</h2>
-                <h4 className="text-font" style={{marginTop:'10px'}}>{testimonial.role}</h4>
+                <h4 className="text-font" style={{ marginTop: "10px" }}>
+                  {testimonial.role}
+                </h4>
                 <p style={vpStyle}>{testimonial.testimonial}</p>
               </div>
             ))}
@@ -408,6 +390,3 @@ const Homepage = () => {
 };
 
 export default Homepage;
-
-
-
