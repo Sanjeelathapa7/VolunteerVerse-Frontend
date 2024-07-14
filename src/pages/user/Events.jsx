@@ -192,9 +192,9 @@ const Event = () => {
 
         nav ul li a:hover,
         nav ul li.active a {
-          background-color: #007bff;
+          background-color: rgba(26, 76, 110, 0.21);
 
-          color: #fff;
+          color: #000;
         }
 
         main {
@@ -242,7 +242,7 @@ const Event = () => {
         }
 
         .rbc-toolbar button {
-          background-color: #007bff;
+          background-color: #617CB5;
 
           border: none;
 
@@ -258,7 +258,7 @@ const Event = () => {
         }
 
         .rbc-toolbar button:hover {
-          background-color: #0056b3;
+          background-color: #759DF0;
 
           transform: scale(1.05);
         }
@@ -274,7 +274,7 @@ const Event = () => {
         }
 
         .rbc-event {
-          background-color: #ff7f50;
+          background-color: #1A4C6E;
 
           border: none;
 
@@ -298,7 +298,7 @@ const Event = () => {
 
           font-size: 14px;
 
-          color: #007bff;
+          color: #617CB5;
 
           text-align: center;
 
@@ -314,28 +314,28 @@ const Event = () => {
         />
 
         <ul>
-          <li>
+          <li style={{ fontFamily: "Inknut Antiqua, serif", fontSize:'15px' }}>
             <a href="user/dashboard">Dashboard</a>
           </li>
 
-          <li className="active">
+          <li className="active" style={{ fontFamily: "Inknut Antiqua, serif", fontSize:'15px' }}>
             <a href="#">Calendar</a>
           </li>
 
-          <li>
-            <a href="#">Events</a>
+          <li style={{ fontFamily: "Inknut Antiqua, serif", fontSize:'15px' }}>
+            <a href="/eventDetails">Events</a>
           </li>
 
-          <li>
-            <a href="#">Chat</a>
+          <li style={{ fontFamily: "Inknut Antiqua, serif", fontSize:'15px' }}>
+            <a href="/chat">Chat</a>
           </li>
 
-          <li>
-            <a href="#">Performance</a>
+          <li style={{ fontFamily: "Inknut Antiqua, serif", fontSize:'15px' }}>
+            <a href="/perfomance">Performance</a>
           </li>
 
-          <li>
-            <a href="#">Profile</a>
+          <li style={{ fontFamily: "Inknut Antiqua, serif", fontSize:'15px' }}>
+            <a href="/profile">Profile</a>
           </li>
         </ul>
       </nav>

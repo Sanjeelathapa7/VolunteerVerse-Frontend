@@ -12,11 +12,15 @@ const ComProject = () => {
       border: '1px solid #dddddd',
       textAlign: 'left',
       padding: '8px',
+      fontFamily: "Inknut Antiqua",
+      fontSize: "14px",
     },
     td: {
       border: '1px solid #dddddd',
       textAlign: 'left',
       padding: '8px',
+      fontFamily: "Inder",
+      fontSize: "14px",
     },
   };
 
@@ -31,11 +35,12 @@ const ComProject = () => {
       <tbody>
         <tr>
           <td style={styles.td}>Program:</td>
-          <td style={styles.td}>Community Health </td>
+          <td style={styles.td}>Health / Medical Care </td>
         </tr>
         <tr>
           <td style={styles.td}>Project:</td>
-          <td style={styles.td}>Youth Club and Life Skills</td>
+          <td style={styles.td}>Public Health and Medical Care
+          </td>
         </tr>
         <tr>
           <td style={styles.td}>Start Dates:</td>
@@ -51,11 +56,13 @@ const ComProject = () => {
         </tr>
         <tr>
           <td style={styles.td}>Key Activities:</td>
-          <td style={styles.td}>Working with youth Club: English Language, computer technology, career development workshops, sports</td>
+          <td style={styles.td}>Shadow doctor at health post, conduct awareness programs on health and hygiene, First Aid to local youth, women, children clubs, conducting medical camps
+          </td>
         </tr>
         <tr>
           <td style={styles.td}>Beneficiaries:</td>
-          <td style={styles.td}>18 to 30 years of local youth</td>
+          <td style={styles.td}>Local women, children, youth, teachers and other community people in general
+          </td>
         </tr>
         <tr>
           <td style={styles.td}>Working Hours:</td>
@@ -63,7 +70,7 @@ const ComProject = () => {
         </tr>
         <tr>
           <td style={styles.td}>Required Qualifications and Skills:</td>
-          <td style={styles.td}>Knowledge and skills on youth Empowerment</td>
+          <td style={styles.td}>Medical / public health background either currently studying or practicing in the medical field. doctors, nurses, medical students, and nursing students. keen to work in rural community with basic facilities</td>
         </tr>
       </tbody>
     </table>

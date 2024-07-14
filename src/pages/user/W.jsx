@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ProjectSummary = () => {
+const W = () => {
   const styles = {
     table: {
       width: '100%',
@@ -35,13 +35,11 @@ const ProjectSummary = () => {
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td style={styles.td}>Program:</td>
-          <td style={styles.td}>Youth Empowerment</td>
-        </tr>
+       
         <tr>
           <td style={styles.td}>Project:</td>
-          <td style={styles.td}>Youth Club and Life Skills</td>
+          <td style={styles.td}>Women’s empowerment
+          </td>
         </tr>
         <tr>
           <td style={styles.td}>Start Dates:</td>
@@ -57,23 +55,25 @@ const ProjectSummary = () => {
         </tr>
         <tr>
           <td style={styles.td}>Key Activities:</td>
-          <td style={styles.td}>Working with youth Club: English Language, computer technology, career development workshops, sports</td>
+          <td style={styles.td}>Working with women in the field, account keeping, awareness raising, technical skills, small grant writing</td>
         </tr>
         <tr>
           <td style={styles.td}>Beneficiaries:</td>
-          <td style={styles.td}>18 to 30 years of local youth</td>
+          <td style={styles.td}>Women from disadvantaged community
+          </td>
         </tr>
         <tr>
           <td style={styles.td}>Working Hours:</td>
-          <td style={styles.td}>3 to 5 hours a day, 5 to 6 days a week</td>
+          <td style={styles.td}>	4 to 5 hours a day, 6 days a week</td>
         </tr>
         <tr>
           <td style={styles.td}>Required Qualifications and Skills:</td>
-          <td style={styles.td}>Knowledge and skills on youth Empowerment</td>
+          <td style={styles.td}>No formal training required, passion to work with women, flexible attitude
+          </td>
         </tr>
       </tbody>
     </table>
   );
 };
 
-export default ProjectSummary;
+export default W;

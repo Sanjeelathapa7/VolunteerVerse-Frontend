@@ -4,6 +4,7 @@ import React from "react";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer"; // Import the Footer component
 import ProjectSummary from "./ProjectSummary";
+import { PrecisionManufacturingTwoTone } from "@mui/icons-material";
 
 const YouthEmpowerment = () => {
   const styles = {
@@ -26,6 +27,10 @@ const YouthEmpowerment = () => {
     },
     text: {
       flex: 1,
+      fontFamily: "Inder",
+      textAlign: "justify",
+      fontSize:'14px',
+      marginBottom: "10px"
     },
     sidebar: {
       width: "25%",
@@ -34,8 +39,10 @@ const YouthEmpowerment = () => {
     },
     sidebarHeader: {
       marginBottom: "20px",
-      fontSize: "1.2em",
+      fontSize: "14px",
       textAlign: "center",
+      fontFamily:"Inknut Antiqua",
+
     },
     program: {
       display: "flex",
@@ -52,31 +59,53 @@ const YouthEmpowerment = () => {
     programTitle: {
       fontWeight: "bold",
       color: "#007BFF",
-      fontSize: "0.9em",
+      fontSize: "12px",
+      fontFamily: "Inknut Antiqua",
     },
     programDescription: {
       fontSize: "0.8em",
       color: "#333",
+      fontFamily: "Inder",
     },
     objectivesHeader: {
       marginTop: "20px",
+      fontFamily:"Inknut Antiqua",
       fontWeight: "bold",
+      fontSize: "14px",
+
     },
     objectivesList: {
       listStyleType: "disc",
       marginLeft: "20px",
+
     },
     objectivesListItem: {
-      marginBottom: "10px",
+      marginBottom: "15px",
+      fontFamily: "Inder",
+      fontSize: '14px',
+      marginTop:'10px'
     },
   };
+
+  const hstyle = {
+    fontFamily:"Inknut Antiqua",
+    fontSize: "14px",
+    fontWeight: "bold",
+    marginBottom:'10px'
+  }
+  const pstyle = {
+    fontFamily: "Inder",
+    textAlign: "justify",
+    fontSize:'14px',
+    marginTop: "8px"
+  }
 
   return (
     <div>
       <Navbar />
       <div style={styles.container}>
         <div style={styles.content}>
-          <h1>Youth Club and Life Skills</h1>
+          <h1 style={hstyle}>Youth Club and Life Skills</h1>
           <div style={styles.imageTextContainer}>
             <img
               src="assets/images/women.jpg"
@@ -88,16 +117,9 @@ const YouthEmpowerment = () => {
                               Volunteerverse youth empowerment volunteer program looks to inspire and make proactive
                               the youth of Nepal by integrating them into children’s or women’s empowerment causes,
                               as well as teaching them life skills.
-                              {/* You as a volunteer may help in many ways.
-                              You may teach the youth English, or set up workshops that give the youth valuable
-                              {/* vocational skills such as CV writing. Another option you will have will be to hold
-                              sessions on problem-solving and effective communication. If you feel you are not fit
-                              to instruct the youth on the above-mentioned matters, then you may also just set up
-                              discussions on issues of child and women’s rights. This way, you will raise awareness
-                              among the young adults, and possibly even motivate them or stir them enough to turn
-                              their words into actions in the near future. */}
+                             
               </p>
-              <p>
+              <p style={pstyle}>
                               Volunteerverse youth program has a three-fold aim: to prepare the youth of Nepal for all future endeavors by
                               enhancing their social and professional life skills; as well as developing confidence within them,
                               in order to help them deal with all problematic situations; and to get them to be an integral part
@@ -108,7 +130,7 @@ const YouthEmpowerment = () => {
               </p>
             </div>
           </div>
-          <p>
+          <p style={pstyle}>
             Many challenges within the community stem from the fact that
             educated men tend to leave their communities to find work, while
             women stay home. A locally based women’s empowerment program has the
@@ -153,8 +175,8 @@ const YouthEmpowerment = () => {
             </li>
           </ul>
 
-          <h1>What is the current program for youth?</h1>
-          <p>
+          <h1 style={hstyle}>What is the current program for youth?</h1>
+          <p style={pstyle}>
                       VIN has set up a local youth club at Jitpur community representing all youth from the community.
                       A variety of activities are conducted at this to empower the rural community youth.
                       This has been a great platform for the local youth to get involved in career development.

@@ -12,11 +12,15 @@ const OurIm = () => {
       border: '1px solid #dddddd',
       textAlign: 'left',
       padding: '8px',
+      fontFamily: "Inknut Antiqua",
+      fontSize: "14px",
     },
     td: {
       border: '1px solid #dddddd',
       textAlign: 'left',
       padding: '8px',
+      fontFamily: "Inder",
+      fontSize: "14px",
     },
   };
 

@@ -29,10 +29,62 @@ const testimonials = [
   },
 ];
 const paragraphStyle = {
-
-  fontFamily:"Inder"
-
+  fontFamily: "Inder",
+  fontSize: "16px", // Adjust the font size as needed
+  marginTop: "20px" // Adjust the space before the paragraph as needed
 };
+const pStyle = {
+  fontFamily: "Inder",
+  fontSize: "16px", // Adjust the font size as needed
+  textAlign: "justify",
+  marginTop: "8px"
+}
+
+const rStyle = {
+  fontFamily: "Inder",
+  textAlign: "right" ,
+  textAlign: "justify",
+  marginTop: "8px"
+
+}
+const ourStyle = {
+  textAlign: "center",
+  marginBottom: "20px",
+  fontFamily: "Inknut Antiqua",
+
+}
+
+const headingStyle = {
+  fontFamily:"Inknut Antiqua",
+  fontSize: "15px",
+  fontWeight:"bold"
+  
+}
+
+const empStyle = {
+  textDecoration: "underline",
+  fontFamily:"Inknut Antiqua",
+  fontSize: "15px",
+
+}
+const paStyle = {
+  fontFamily: "Inder",
+  textAlign: "justify",
+  fontSize:'14px',
+  marginTop: "8px"
+}
+const vhStyle = {
+  fontFamily:"Inknut Antiqua",
+  fontSize: "13px",
+  fontWeight:"bold"
+}
+
+const vpStyle = {
+  fontFamily: "Inder",
+  fontSize:'14px',
+  marginTop: "8px"
+  
+}
 const Homepage = () => {
   return (
     <div style={{ width: "100%", position: "relative" }}>
@@ -50,7 +102,7 @@ const Homepage = () => {
           alt="VolunteerVerse Logo"
           style={{ width: "100%", height: "auto", marginBottom: "20px" }}
         />
-        <h1 className="text-font">Welcome to VolunteerVerse</h1>
+        <h1 style={headingStyle}>Welcome to VolunteerVerse</h1>
         <p style={paragraphStyle}>
           VolunteerVerse is a dedicated platform connecting volunteers with
           opportunities to make a difference in their communities and beyond.
@@ -78,8 +130,8 @@ const Homepage = () => {
           </div>
           <div style={{ width: "100%", padding: "0 30px" }}>
             <div style={{ marginTop: "0px" }}>
-              <h2 className="text-font">Volunteer in Nepal</h2>
-              <p>
+              <h2 style={headingStyle}>Volunteer in Nepal</h2>
+              <p style={pStyle}>
                 VolunteerVerse is a comprehensive platform dedicated to cultivating a vibrant
                 community of individuals and organizations committed to making a positive impact
                 through volunteerism. At its core, VolunteerVerse functions as a seamless bridge,
@@ -106,9 +158,9 @@ const Homepage = () => {
           style={{ display: "flex", alignItems: "start", marginTop: "40px" }}
         >
           <div style={{ width: "70%", padding: "0 40px", textAlign: "right" }}>
-            <h2 className="text-font">Internship in Nepal</h2>
+            <h2 style={headingStyle}>Internship in Nepal</h2>
 
-            <p style={{ textAlign: "right" }}>
+            <p style={rStyle}>
               Internship in Nepal offers a unique and enriching opportunity for
               individuals to gain hands-on experience in a variety of meaningful
               projects while fully immersing themselves in the country's rich
@@ -144,8 +196,7 @@ const Homepage = () => {
           }}
         >
           <h1
-            className="text-font"
-            style={{ textAlign: "center", marginBottom: "20px" }}
+            style={ourStyle}
           >
             Our Volunteer and Internship Placements
           </h1>
@@ -166,13 +217,12 @@ const Homepage = () => {
               <h2>
                 <Link
                   to="/women-empowerment"
-                  className="text-font"
-                  style={{ textDecoration: "underline" }}
+                  style={empStyle}
                 >
                   Women Empowerment
                 </Link>
               </h2>
-              <p>
+              <p style={paStyle}>
                 Volunteering Nepal aims in empowering women from marginalized
                 communities for projects. Click here to know more about women
                 empowerment program.
@@ -187,13 +237,12 @@ const Homepage = () => {
               <h2>
                 <Link
                   to="/youth-empowerment"
-                  className="text-font"
-                  style={{ textDecoration: "underline" }}
+                  style={empStyle}
                 >
                   Youth Empowerment
                 </Link>
               </h2>
-              <p>
+              <p style={paStyle}>
                 Work as volunteer for Youth Empowerment work with
                 underprivileged youths in Nepal. You can make a difference!
               </p>
@@ -207,13 +256,12 @@ const Homepage = () => {
               <h2>
                 <Link
                   to="/children-development"
-                  className="text-font"
-                  style={{ textDecoration: "underline" }}
+                  style={empStyle}
                 >
                   Children Development
                 </Link>
               </h2>
-              <p>
+              <p style={paStyle}>
                 Be part of VolunteerVerse offer your love, care and support to
                 early childhood development education in Nepal. Get involved now
                 by volunteering.
@@ -233,18 +281,18 @@ const Homepage = () => {
                 <img
                   src="/assets/images/Com.jpg"
                   alt="Community Health"
-                  style={{ width: "100%", height: "67%" }}
+                  style={{ width: "100%", height: "63", marginTop:'10px' }}
                 />
                 <h2>
                   <Link
                     to="/community-health"
                     className="text-font"
-                    style={{ textDecoration: "underline" }}
+                    style={empStyle}
                   >
                     Community Health
                   </Link>
                 </h2>
-                <p>
+                <p style={paStyle}>
                   Be a part of volunteering Nepal – offer your care and support
                   to community health and medical care in Nepal. Click here to
                   see how you can help today!
@@ -260,12 +308,12 @@ const Homepage = () => {
                   <Link
                     to="/drr-research-volunteer"
                     className="text-font"
-                    style={{ textDecoration: "underline" }}
+                    style={empStyle}
                   >
                     DRR Research Volunteer
                   </Link>
                 </h2>
-                <p>
+                <p style={paStyle}>
                   You will help the community people develop a disaster risk
                   reduction plan. DRR research volunteer will conduct a
                   wide-ranging study in the DRR sector.
@@ -281,12 +329,12 @@ const Homepage = () => {
                   <Link
                     to="/teaching-english"
                     className="text-font"
-                    style={{ textDecoration: "underline" }}
+                    style={empStyle}
                   >
                     Teaching English
                   </Link>
                 </h2>
-                <p>
+                <p style={paStyle}>
                   In Nepal, each school has its own English teachers who may be
                   available to assist volunteers with teaching methods.
                 </p>
@@ -301,8 +349,8 @@ const Homepage = () => {
             backgroundColor: "#f7f7f7",
           }}
         >
-          <h1 className="text-font">What Our Volunteers Say?</h1>
-          <p className="text-font">
+          <h1 style={headingStyle}>What Our Volunteers Say?</h1>
+          <p className="text-font" style={{ marginTop: '15px' }}>
             Learn more about the experience of volunteering in Nepal with us
             through the testimonials of our past volunteers.
           </p>
@@ -345,9 +393,9 @@ const Homepage = () => {
                     }}
                   />
                 </div>
-                <h2 className="text-font">{testimonial.name}</h2>
-                <h4 className="text-font">{testimonial.role}</h4>
-                <p>{testimonial.testimonial}</p>
+                <h2 style={vhStyle}>{testimonial.name}</h2>
+                <h4 className="text-font" style={{marginTop:'10px'}}>{testimonial.role}</h4>
+                <p style={vpStyle}>{testimonial.testimonial}</p>
               </div>
             ))}
           </div>

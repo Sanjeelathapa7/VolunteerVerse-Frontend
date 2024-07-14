@@ -56,11 +56,6 @@ const Profile = () => {
         }
     };
 
-    // const handleProfileImageUpload = (event) => {
-    //     const file = event.target.files[0];
-    //     setProfileImage(file);
-    //     setPreviewProfileImage(URL.createObjectURL(file));
-    // };   
 
     return (
         <div className="d-flex flex-column align-items-center justify-content-center profile-page-container">
@@ -97,14 +92,12 @@ const Profile = () => {
                             <strong>Last Name:</strong> {userData.lastName}
                         </p>
                         <p>
-                            <strong>Contact Number:</strong> {userData.contact}
+                            <strong>Email Address:</strong> {userData.email}
                         </p>
-                        <p>
+                        {/* <p>
                             <strong>Address:</strong> {userData.location}
-                        </p>
-                        <p>
-                            <strong>Email:</strong> {userData.email}
-                        </p>
+                        </p> */}
+                      
                     </div>
                     {profileImage && (
                         <img

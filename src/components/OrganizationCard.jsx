@@ -36,13 +36,17 @@ const OrganizationCard = ({ organization }) => {
         }
 
         .organization-card-title {
-          font-size: 18px;
+          font-size: 16px;
           margin-bottom: 10px;
+          font-family:Inknut Antiqua
         }
 
         .organization-details {
           color: #777;
           margin-bottom: 20px;
+                    font-family:Inder;
+                    font-size:15px
+
 
         }
 

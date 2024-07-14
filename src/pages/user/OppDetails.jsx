@@ -97,8 +97,11 @@ const OppDetails = () => {
         }
 
         .event-title {
-          font-size: 1.5em;
+          font-size: 16px;
           margin: 10px 0;
+                    font-family: "Inknut Antiqua";
+
+          
         }
 
         .event-info {
@@ -109,6 +112,9 @@ const OppDetails = () => {
   margin-bottom: 20px; /* Adds bottom margin for spacing */
   border: none; /* Removes any border */
   outline: none; /* Removes any outline */
+  font-family:Inder;
+  font-size:15px;
+  margin-right:25px
 }
 
 
@@ -121,6 +127,8 @@ const OppDetails = () => {
 
         .event-details-text {
           line-height: 1.6;
+          font-family:Inder;
+          margin-bottom:15px
         }
       `}</style>
 
@@ -131,22 +139,22 @@ const OppDetails = () => {
           className="logo"
         />
         <ul>
-          <li>
+          <li style={{ fontFamily: "Inknut Antiqua, serif", fontSize:'15px' }}>
             <a href="#">Dashboard</a>
           </li>
-          <li>
+          <li style={{ fontFamily: "Inknut Antiqua, serif", fontSize:'15px' }}>
             <a href="/event">Calendar</a>
           </li>
-          <li className="active">
+          <li className="active" style={{ fontFamily: "Inknut Antiqua, serif", fontSize:'15px' }}>
             <a href="#">Events</a>
           </li>
-          <li>
+          <li style={{ fontFamily: "Inknut Antiqua, serif", fontSize:'15px' }}>
             <a href="#">Chat</a>
           </li>
-          <li>
+          <li style={{ fontFamily: "Inknut Antiqua, serif", fontSize:'15px' }}>
             <a href="#">Performance</a>
           </li>
-          <li>
+          <li style={{ fontFamily: "Inknut Antiqua, serif", fontSize:'15px' }}>
             <a href="#">Profile</a>
           </li>
         </ul>
@@ -159,16 +167,16 @@ const OppDetails = () => {
         </div>
         <div className="event-info">
           <div>
-            <strong>Organized by:</strong> {event.organizer}
+            <strong style={{ fontFamily: "Inknut Antiqua, serif", fontSize:'12px' }}>Organized by:</strong> {event.organizer}
           </div>
           <div>
-            <strong>Volunteers:</strong> {event.volunteer}
+            <strong style={{ fontFamily: "Inknut Antiqua, serif", fontSize:'12px' }}>Volunteers:</strong> {event.volunteer}
           </div>
           <div>
-            <strong>Location:</strong> {event.location}
+            <strong style={{ fontFamily: "Inknut Antiqua, serif", fontSize:'12px' }}>Location:</strong> {event.location}
           </div>
           <div>
-            <strong>Time:</strong> {event.eventTime}
+            <strong style={{ fontFamily: "Inknut Antiqua, serif", fontSize:'12px' }}>Time:</strong> {event.eventTime}
           </div>
         </div>
         <p className="event-details-text">{event.eventDetails}</p>

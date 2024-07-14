@@ -134,7 +134,7 @@ const EventDetails = () => {
         <img src="/assets/images/logo.png" alt="VolunteerVerse Logo" className="logo" />
         <ul>
           <li >
-            <a href="#">Dashboard</a>
+            <a href="/user/dashboard">Dashboard</a>
           </li>
           <li >
             <a href="/event">Calendar</a>
@@ -146,7 +146,7 @@ const EventDetails = () => {
             <a href="/chat">Chat</a>
           </li>
           <li>
-            <a href="#">Performance</a>
+            <a href="/performance">Performance</a>
           </li>
           <li>
             <a href="/profile">Profile</a>

@@ -1,9 +1,7 @@
+import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 
-
-import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
-
-import { getSingleOrganizationApi } from '../../apis/Apis'; // Adjust import as per your API structure
+import { getSingleOrganizationApi } from "../../apis/Apis"; // Adjust import as per your API structure
 
 const OrganizationDetails = () => {
   const [organization, setOrganization] = useState(null); // Initialize with null
@@ -72,20 +70,25 @@ const OrganizationDetails = () => {
 
         nav ul li a:hover,
         nav ul li.active a {
-          background-color: rgba(26, 76, 110, 0.21); /* Color with 21% opacity */
+          background-color: rgba(
+            26,
+            76,
+            110,
+            0.21
+          ); /* Color with 21% opacity */
           color: #333; /* Use a dark color for the text on hover/active */
         }
 
         .organization-content {
           flex-grow: 1;
-          padding: 90px;
+          padding: 60px;
         }
 
         .organization-image {
           width: 100%;
           height: auto;
-          max-width: 300px;
-          margin-bottom: 20px;
+          max-width: 350px;
+          margin-bottom: 10px;
         }
 
         .organization-name {
@@ -95,45 +98,52 @@ const OrganizationDetails = () => {
         }
 
         .organization-description {
-          font-size: 16px;
+          font-size: 14px;
           color: #555;
           text-align: justify;
+          font-family: "Inder";
         }
       `}</style>
 
       <nav>
-        <img src="/assets/images/logo.png" alt="VolunteerVerse Logo" className="logo" />
+        <img
+          src="/assets/images/logo.png"
+          alt="VolunteerVerse Logo"
+          className="logo"
+        />
         <ul>
-          <li className="active">
-            <a href="#">Dashboard</a>
+          <li className="active" style={{ fontFamily: "Inknut Antiqua, serif", fontSize:'15px' }}>
+            <a href="/user/dashboard">Dashboard</a>
           </li>
-          <li>
-            <a href="/event">Events</a>
+          <li style={{ fontFamily: "Inknut Antiqua, serif", fontSize:'15px' }}>
+            <a href="/event">Calendar</a>
           </li>
-          <li>
-            <a href="#">Notification</a>
+          <li style={{ fontFamily: "Inknut Antiqua, serif", fontSize:'15px' }}>
+            <a href="eventDetails">Event</a>
           </li>
-          <li>
-            <a href="#">Chat</a>
+          <li style={{ fontFamily: "Inknut Antiqua, serif", fontSize:'15px' }}>
+            <a href="/chat">Chat</a>
           </li>
-          <li>
-            <a href="#">Performance</a>
+          <li style={{ fontFamily: "Inknut Antiqua, serif", fontSize:'15px' }}>
+            <a href="/performance">Performance</a>
           </li>
-          <li>
-            <a href="#">Profile</a>
+          <li style={{ fontFamily: "Inknut Antiqua, serif", fontSize:'15px' }}>
+            <a href="/profile">Profile</a>
           </li>
         </ul>
       </nav>
 
-          <div className="organization-content">
-          {/* <h1 className="organization-name">{organization.organizationName}</h1> */}
+      <div className="organization-content">
+        {/* <h1 className="organization-name">{organization.organizationName}</h1> */}
 
         <img
           src={organization.organizationImageUrl}
           alt={organization.organizationName}
           className="organization-image"
         />
-        <p className="organization-description">{organization.organizationDetails}</p>
+        <p className="organization-description">
+          {organization.organizationDetails}
+        </p>
       </div>
     </div>
   );

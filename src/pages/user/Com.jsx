@@ -12,11 +12,15 @@ const Com = () => {
       border: '1px solid #dddddd',
       textAlign: 'left',
       padding: '8px',
+      fontFamily: "Inknut Antiqua",
+      fontSize: "14px",
     },
     td: {
       border: '1px solid #dddddd',
       textAlign: 'left',
       padding: '8px',
+      fontFamily: "Inder",
+      fontSize: "14px",
     },
   };
 
@@ -24,47 +28,51 @@ const Com = () => {
     <table style={styles.table}>
       <thead>
         <tr>
-          <th style={styles.th}>Project Summary</th>
+          <th style={styles.th}>How would a typical day look like?</th>
           <th style={styles.th}></th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td style={styles.td}>Program:</td>
-          <td style={styles.td}>Community Health </td>
+          <td style={styles.td}>07:00-08:00</td>
+          <td style={styles.td}>Tea/Leisure Time </td>
         </tr>
         <tr>
-          <td style={styles.td}>Project:</td>
-          <td style={styles.td}>Youth Club and Life Skills</td>
+          <td style={styles.td}>08:00-09:00	</td>
+          <td style={styles.td}>Breakfast/Brunch (Nepali meal – Daal-Bhaat)
+          </td>
         </tr>
         <tr>
-          <td style={styles.td}>Start Dates:</td>
-          <td style={styles.td}>1st and 15th of each month</td>
+          <td style={styles.td}>09:00-10:00</td>
+          <td style={styles.td}>Preparation for sessions
+          </td>
         </tr>
         <tr>
-          <td style={styles.td}>Language Requirements:</td>
-          <td style={styles.td}>English (Basic Nepali is provided)</td>
+          <td style={styles.td}>10:00-13:00	</td>
+          <td style={styles.td}>Deliver sessions
+          </td>
         </tr>
         <tr>
-          <td style={styles.td}>Food and Accommodation:</td>
-          <td style={styles.td}>Nepali standard with host family in the working community</td>
+          <td style={styles.td}>13:00-14:00	</td>
+          <td style={styles.td}>Lunch (Packed lunch)
+          </td>
         </tr>
         <tr>
-          <td style={styles.td}>Key Activities:</td>
-          <td style={styles.td}>Working with youth Club: English Language, computer technology, career development workshops, sports</td>
+          <td style={styles.td}>15:00-17:00	</td>
+          <td style={styles.td}>Deliver sessions/Extracurricular activities
+          </td>
         </tr>
         <tr>
-          <td style={styles.td}>Beneficiaries:</td>
-          <td style={styles.td}>18 to 30 years of local youth</td>
+          <td style={styles.td}>17:00-20:00	</td>
+          <td style={styles.td}>Preparation for next day/Leisure time
+          </td>
         </tr>
         <tr>
-          <td style={styles.td}>Working Hours:</td>
-          <td style={styles.td}>3 to 5 hours a day, 5 to 6 days a week</td>
+          <td style={styles.td}>20:00-21:00	</td>
+          <td style={styles.td}>Dinner (Nepali meal – Daal-Bhaat)
+          </td>
         </tr>
-        <tr>
-          <td style={styles.td}>Required Qualifications and Skills:</td>
-          <td style={styles.td}>Knowledge and skills on youth Empowerment</td>
-        </tr>
+        
       </tbody>
     </table>
   );

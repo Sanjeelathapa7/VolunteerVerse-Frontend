@@ -12,11 +12,15 @@ const D = () => {
       border: '1px solid #dddddd',
       textAlign: 'left',
       padding: '8px',
+      fontFamily: "Inknut Antiqua",
+      fontSize: "14px",
     },
     td: {
       border: '1px solid #dddddd',
       textAlign: 'left',
       padding: '8px',
+      fontFamily: "Inder",
+      fontSize: "14px",
     },
   };
 
@@ -31,11 +35,13 @@ const D = () => {
       <tbody>
         <tr>
           <td style={styles.td}>Program:</td>
-          <td style={styles.td}>Community Health </td>
+          <td style={styles.td}>Disaster Risk Reduction
+          </td>
         </tr>
         <tr>
           <td style={styles.td}>Project:</td>
-          <td style={styles.td}>Youth Club and Life Skills</td>
+          <td style={styles.td}>DRR Research Volunteer
+          </td>
         </tr>
         <tr>
           <td style={styles.td}>Start Dates:</td>
@@ -51,19 +57,19 @@ const D = () => {
         </tr>
         <tr>
           <td style={styles.td}>Key Activities:</td>
-          <td style={styles.td}>Working with youth Club: English Language, computer technology, career development workshops, sports</td>
+          <td style={styles.td}>Organizing DRR research</td>
         </tr>
         <tr>
           <td style={styles.td}>Beneficiaries:</td>
-          <td style={styles.td}>18 to 30 years of local youth</td>
+          <td style={styles.td}>	Children, Women and Community people</td>
         </tr>
         <tr>
           <td style={styles.td}>Working Hours:</td>
-          <td style={styles.td}>3 to 5 hours a day, 5 to 6 days a week</td>
+          <td style={styles.td}>	4 to 6 hours a day / 5 to 6 days a week</td>
         </tr>
         <tr>
           <td style={styles.td}>Required Qualifications and Skills:</td>
-          <td style={styles.td}>Knowledge and skills on youth Empowerment</td>
+          <td style={styles.td}>	Passion to sharing culture, Positive attitude, Excellent communication skills</td>
         </tr>
       </tbody>
     </table>

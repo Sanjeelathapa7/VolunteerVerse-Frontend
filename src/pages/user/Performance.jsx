@@ -297,7 +297,7 @@ function Performance() {
           <img src="/assets/images/logo.png" alt="VolunteerVerse Logo" className="logo" />
           <ul>
             <li>
-              <a href="#">Dashboard</a>
+              <a href="/user/dashboard">Dashboard</a>
             </li>
             <li>
               <a href="/event">Calendar</a>

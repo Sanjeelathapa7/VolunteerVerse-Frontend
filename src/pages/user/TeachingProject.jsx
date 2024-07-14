@@ -12,11 +12,17 @@ const TeachingProject = () => {
       border: '1px solid #dddddd',
       textAlign: 'left',
       padding: '8px',
+      fontFamily: "Inknut Antiqua",
+      fontSize: "14px",
+
+
     },
     td: {
       border: '1px solid #dddddd',
       textAlign: 'left',
       padding: '8px',
+      fontFamily: "Inder",
+      fontSize: "14px",
     },
   };
 
@@ -25,17 +31,20 @@ const TeachingProject = () => {
       <thead>
         <tr>
           <th style={styles.th}>Project Summary</th>
-          <th style={styles.th}></th>
+          <th style={styles.th}>
+          </th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td style={styles.td}>Program:</td>
-          <td style={styles.td}>Community Health </td>
+          <td style={styles.td}>Teaching English at Schools
+ </td>
         </tr>
         <tr>
           <td style={styles.td}>Project:</td>
-          <td style={styles.td}>Youth Club and Life Skills</td>
+          <td style={styles.td}>Chidren’s Development
+          </td>
         </tr>
         <tr>
           <td style={styles.td}>Start Dates:</td>
@@ -51,19 +60,22 @@ const TeachingProject = () => {
         </tr>
         <tr>
           <td style={styles.td}>Key Activities:</td>
-          <td style={styles.td}>Working with youth Club: English Language, computer technology, career development workshops, sports</td>
+          <td style={styles.td}>Teaching English, organizing creative activities
+          </td>
         </tr>
         <tr>
           <td style={styles.td}>Beneficiaries:</td>
-          <td style={styles.td}>18 to 30 years of local youth</td>
+          <td style={styles.td}>Children age 6 to 15, school teachers
+          </td>
         </tr>
         <tr>
           <td style={styles.td}>Working Hours:</td>
-          <td style={styles.td}>3 to 5 hours a day, 5 to 6 days a week</td>
+          <td style={styles.td}>3 to 4 hours a day / 6 days a week
+          </td>
         </tr>
         <tr>
           <td style={styles.td}>Required Qualifications and Skills:</td>
-          <td style={styles.td}>Knowledge and skills on youth Empowerment</td>
+          <td style={styles.td}>No formal training needed, flexible passion to work with children</td>
         </tr>
       </tbody>
     </table>

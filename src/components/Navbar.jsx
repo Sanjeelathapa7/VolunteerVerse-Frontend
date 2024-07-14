@@ -1,5 +1,3 @@
-
-
 import React from "react";
 import { NavLink as RouterNavLink, useNavigate } from "react-router-dom";
 import styled from "styled-components";
@@ -44,6 +42,8 @@ const NavLink = styled(RouterNavLink)`
 const ButtonContainer = styled.div`
   display: flex;
   gap: 10px;
+  font-family: "Inknut Antiqua";
+  font-size: "14px";
 `;
 
 const Button = styled.button`
@@ -58,8 +58,6 @@ const Button = styled.button`
     background-color: #365083;
   }
 `;
-
-
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -94,5 +92,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-

@@ -12,11 +12,15 @@ const ChildProject = () => {
       border: '1px solid #dddddd',
       textAlign: 'left',
       padding: '8px',
+      fontFamily: "Inknut Antiqua",
+      fontSize: "14px",
     },
     td: {
       border: '1px solid #dddddd',
       textAlign: 'left',
       padding: '8px',
+      fontFamily: "Inder",
+      fontSize: "14px",
     },
   };
 
@@ -35,7 +39,8 @@ const ChildProject = () => {
         </tr>
         <tr>
           <td style={styles.td}>Project:</td>
-          <td style={styles.td}>Youth Club and Life Skills</td>
+          <td style={styles.td}>Child Care: Early Childhood Development
+          </td>
         </tr>
         <tr>
           <td style={styles.td}>Start Dates:</td>
@@ -51,19 +56,21 @@ const ChildProject = () => {
         </tr>
         <tr>
           <td style={styles.td}>Key Activities:</td>
-          <td style={styles.td}>Working with youth Club: English Language, computer technology, career development workshops, sports</td>
+          <td style={styles.td}>Organizing creative and child friendly activities, teaching, arts, musics
+          </td>
         </tr>
         <tr>
           <td style={styles.td}>Beneficiaries:</td>
-          <td style={styles.td}>18 to 30 years of local youth</td>
+          <td style={styles.td}>Children age 3 to 6, local volunteers, teachers, parents, overseas volunteers
+          </td>
         </tr>
         <tr>
           <td style={styles.td}>Working Hours:</td>
-          <td style={styles.td}>3 to 5 hours a day, 5 to 6 days a week</td>
+          <td style={styles.td}>4 to 5 hours</td>
         </tr>
         <tr>
           <td style={styles.td}>Required Qualifications and Skills:</td>
-          <td style={styles.td}>Knowledge and skills on youth Empowerment</td>
+          <td style={styles.td}>Keen interest to working with children, skills to perform above mentioned activities</td>
         </tr>
       </tbody>
     </table>

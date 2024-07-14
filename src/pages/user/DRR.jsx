@@ -26,6 +26,10 @@ const DRR = () => {
     },
     text: {
       flex: 1,
+      fontFamily: "Inder",
+      textAlign: "justify",
+      fontSize:'14px',
+      marginBottom: "10px"
     },
     sidebar: {
       width: "25%",
@@ -34,8 +38,9 @@ const DRR = () => {
     },
     sidebarHeader: {
       marginBottom: "20px",
-      fontSize: "1.2em",
+      fontSize: "14px",
       textAlign: "center",
+      fontFamily:"Inknut Antiqua",
     },
     program: {
       display: "flex",
@@ -52,31 +57,66 @@ const DRR = () => {
     programTitle: {
       fontWeight: "bold",
       color: "#007BFF",
-      fontSize: "0.9em",
+      fontSize: "12px",
+      fontFamily: "Inknut Antiqua",
     },
     programDescription: {
       fontSize: "0.8em",
       color: "#333",
+      fontFamily: "Inder",
     },
     objectivesHeader: {
       marginTop: "20px",
+      fontFamily:"Inknut Antiqua",
       fontWeight: "bold",
+      fontSize: "14px",
     },
     objectivesList: {
       listStyleType: "disc",
       marginLeft: "20px",
     },
     objectivesListItem: {
-      marginBottom: "10px",
-    },
+      marginBottom: "15px",
+      fontFamily: "Inder",
+      fontSize: '14px',
+      marginTop:'10px'    },
   };
+
+  const hstyle = {
+    fontFamily:"Inknut Antiqua",
+    fontSize: "14px",
+    fontWeight: "bold",
+    marginBottom:'10px'
+  }
+  const hhstyle = {
+    fontFamily:"Inknut Antiqua",
+    fontSize: "14px",
+    fontWeight: "bold",
+    marginBottom: '5px',
+    marginTop:'7px'
+  }
+  const hostyle = {
+    fontFamily:"Inknut Antiqua",
+    fontSize: "14px",
+    fontWeight: "bold",
+    marginBottom: '5px',
+    marginTop:'15px'
+  }
+
+
+  const pstyle = {
+    fontFamily: "Inder",
+    textAlign: "justify",
+    fontSize:'14px',
+    marginTop: "8px"
+  }
 
   return (
     <div>
       <Navbar />
       <div style={styles.container}>
         <div style={styles.content}>
-          <h1>DRR Research Volunteer </h1>
+          <h1 style={hstyle}>DRR Research Volunteer </h1>
           <div style={styles.imageTextContainer}>
             <img
               src="assets/images/women.jpg"
@@ -89,7 +129,7 @@ const DRR = () => {
                 the socio-economic vulnerabilities caused by a disaster among
                 particular groups of people.
               </p>
-              <p>
+              <p style={pstyle}>
                 Nepal is a hub for natural disasters and every year thousands of
                 people lose their life due to flood, landslide, earthquake,
                 avalanche etc. And yet, many structures in Nepal are unsafe for
@@ -103,8 +143,8 @@ const DRR = () => {
               </p>
             </div>
           </div>
-          <h1>What will be your role?</h1>
-          <p>
+          <h1 style={hostyle}>What will be your role?</h1>
+          <p style={pstyle}>
                       During your placement, you will be placed in one of the VIN host program locations,
                       either in Kathmandu, Nuwakot or Okhaldunga.  You will be organizing disaster risk reduction research
                       in various locations. You will be visiting various schools and community buildings to analyse the condition
@@ -114,9 +154,9 @@ const DRR = () => {
                       the long-lasting effects of natural hazards.
           </p>
 <Com/>
-          <h1>Who Can Apply?</h1>
+          <h1 style={hostyle}>Who Can Apply?</h1>
 
-                  <p>Anyone with knowledge and experience in DRR can apply for this project.
+                  <p style={pstyle}>Anyone with knowledge and experience in DRR can apply for this project.
                       You should have good facilitation and communication skills as you will be working with community people.
                       Research skill will be an added advantage.</p>
 

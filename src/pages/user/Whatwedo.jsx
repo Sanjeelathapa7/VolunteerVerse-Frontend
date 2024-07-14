@@ -30,18 +30,26 @@ const Whatwedo = () => {
   };
 
   const headingStyle = {
-    fontSize: '24px',
-    marginBottom: '10px',
-    fontFamily:"InkutAntiqua"
+    fontFamily:"Inknut Antiqua",
+  fontSize: "15px",
+  fontWeight:"bold"
+
   };
 
   const paragraphStyle = {
-    fontSize: '16px',
-    lineHeight: '1.5',
-    marginBottom: '5vh',
-    fontFamily:"Inder"
+    fontFamily: "Inder",
+  fontSize: "16px", // Adjust the font size as needed
+  textAlign: "justify",
+  marginTop: "8px"
 
   };
+  const hostyle = {
+    fontFamily:"Inknut Antiqua",
+    fontSize: "15px",
+    fontWeight: "bold",
+    marginBottom: '5px',
+    marginTop:'15px'
+  }
 
   return (
     <div>
@@ -57,7 +65,7 @@ const Whatwedo = () => {
           <p style={paragraphStyle}>
             VolunteerVerse is founded on the dream that brave and generous volunteers from across all backgrounds can work together to bring about genuine, sustainable change for Nepali communities. We encourage and invite international volunteers to improve the situation of Nepal. We do this by being flexible to our volunteers’ needs and keeping costs low.
           </p>
-          <h2 style={headingStyle}>Why VolunteerVerse</h2>
+          <h2 style={hostyle}>Why VolunteerVerse</h2>
           <p style={paragraphStyle}>
             VIN is one of the few organizations currently operating in Nepal whose mission serves to
             directly empower Nepali youths and promote a greater sense of volunteerism in Nepal.
@@ -74,7 +82,7 @@ const Whatwedo = () => {
 
 
           </p>
-          <h2 style={headingStyle}>Why Volunteering</h2>
+          <h2 style={hostyle}>Why Volunteering</h2>
           <p style={paragraphStyle}>
             VolunteerVerse can be an extremely rewarding and life-changing experience.
             Your efforts can bring great changes in the lives of individual people and the wider

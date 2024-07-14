@@ -27,6 +27,10 @@ const ChildrenDevelopment = () => {
     },
     text: {
       flex: 1,
+      fontFamily: "Inder",
+      textAlign: "justify",
+      fontSize:'14px',
+      marginBottom: "10px"
     },
     sidebar: {
       width: "25%",
@@ -35,8 +39,9 @@ const ChildrenDevelopment = () => {
     },
     sidebarHeader: {
       marginBottom: "20px",
-      fontSize: "1.2em",
+      fontSize: "14px",
       textAlign: "center",
+      fontFamily:"Inknut Antiqua",
     },
     program: {
       display: "flex",
@@ -53,31 +58,65 @@ const ChildrenDevelopment = () => {
     programTitle: {
       fontWeight: "bold",
       color: "#007BFF",
-      fontSize: "0.9em",
+      fontSize: "12px",
+      fontFamily: "Inknut Antiqua",
     },
     programDescription: {
       fontSize: "0.8em",
       color: "#333",
+      fontFamily: "Inder",
     },
     objectivesHeader: {
       marginTop: "20px",
+      fontFamily:"Inknut Antiqua",
       fontWeight: "bold",
+      fontSize: "14px",
     },
     objectivesList: {
       listStyleType: "disc",
       marginLeft: "20px",
     },
     objectivesListItem: {
-      marginBottom: "10px",
-    },
+      marginBottom: "15px",
+      fontFamily: "Inder",
+      fontSize: '14px',
+      marginTop:'10px'    },
   };
+  const hstyle = {
+    fontFamily:"Inknut Antiqua",
+    fontSize: "14px",
+    fontWeight: "bold",
+    marginBottom:'10px'
+  }
+  const hhstyle = {
+    fontFamily:"Inknut Antiqua",
+    fontSize: "14px",
+    fontWeight: "bold",
+    marginBottom: '5px',
+    marginTop:'7px'
+  }
+  const hostyle = {
+    fontFamily:"Inknut Antiqua",
+    fontSize: "14px",
+    fontWeight: "bold",
+    marginBottom: '5px',
+    marginTop:'15px'
+  }
+
+
+  const pstyle = {
+    fontFamily: "Inder",
+    textAlign: "justify",
+    fontSize:'14px',
+    marginTop: "8px"
+  }
 
   return (
     <div>
       <Navbar />
       <div style={styles.container}>
         <div style={styles.content}>
-          <h1>Youth Club and Life Skills</h1>
+          <h1 style={hstyle}>Youth Club and Life Skills</h1>
           <div style={styles.imageTextContainer}>
             <img
               src="assets/images/women.jpg"
@@ -91,7 +130,7 @@ const ChildrenDevelopment = () => {
                               fosters a congenial learning environment for children of 3 to 5 years of age to develop motor,
                               mental, social and emotional skills.”
                           </p>
-                          <h1>Volunteerverse's Mission for Early Childhood Development</h1>
+                          <h1 style={hhstyle}>Volunteerverse's Mission for Early Childhood Development</h1>
               <p>
                               At Volunteerverse we believe in lasting change, therefore it is vital that we invest in our young children
                               for the Nepal of tomorrow. Due to the isolated nature of Nepalese mountain villages, institutions such as
@@ -105,8 +144,8 @@ const ChildrenDevelopment = () => {
               </p>
             </div>
                   </div>
-                  <h1>Issue Nepal is Facing </h1>
-          <p>
+                  <h1 style={hostyle}>Issue Nepal is Facing </h1>
+          <p style={pstyle}>
                       Issue Nepal is FacinAlthough we hear “encouragement” of Early Childhood Development from a seemingly confident government,
                       on the ground their intentions have not matched outcomes. While some regions in Nepal may appear to have access
                       to ECD centres the reality is that many regions lack the qualified teachers and materials to run them efficiently.
@@ -117,13 +156,13 @@ const ChildrenDevelopment = () => {
                       Now VIN funds and runs over 30 Early Childhood Development centers (ECD) in the outskirt of Kathmandu, Okhaldhunga and Nuwakot.
 </p>
 
-                      <h1>Achievements</h1>
-                      <p>VIN now supports over 30 early childhood education centres in schools and communities in
+                      <h1 style={hostyle}>Achievements</h1>
+                      <p style={pstyle}>VIN now supports over 30 early childhood education centres in schools and communities in
                           impoverished Nepalese communities. VIN estimates equipping each centre on average will cost $700,
                           but with our partners’ help we can continue to establish more centres around Nepal.
                           Individuals or organisations interested in lending a helping hand are greatly appreciated.
                       Support from abroad or directly become a part of this empowering project!</p>
-                  <p>
+                  <p style={pstyle}>
                   “After VIN’s orientation to the ECD parents, now our kids are neat and clean and most of the children are bringing lunch from their own homes”
                   </p>
 
@@ -140,8 +179,8 @@ const ChildrenDevelopment = () => {
             <li style={styles.objectivesListItem}>Create teaching/learning resources.</li>
             <li style={styles.objectivesListItem}>Organise student excursions. </li>
           </ul>
-                  <h1>Who can apply?</h1>
-                  <p>
+                  <h1 style={hhstyle}>Who can apply?</h1>
+                  <p style={pstyle}>
                       Anybody who has a strong interest in supporting children from the most marginalised communities
                       and who enjoys working with young children. Prior experience in Montessori or early childhood
                       education methods will be an advantage. Lacking confidence? Not to worry, VIN provides an orientation
@@ -149,8 +188,8 @@ const ChildrenDevelopment = () => {
 
                   </p>
 
-                  <h1>More about ECD Program</h1>
-                  <p>
+                  <h1 style={hostyle}>More about ECD Program</h1>
+                  <p style={pstyle}>
                   Aspects of Children’s Rights Addressed:   Right to Education, Right to Development & Right to Participation
 
 
@@ -170,8 +209,8 @@ const ChildrenDevelopment = () => {
            
           </ul>
 
-          <h1>What is the current program for youth?</h1>
-          <p>
+          <h1 style={hstyle}>What is the current program for youth?</h1>
+          <p style={pstyle}>
                       VIN has set up a local youth club at Jitpur community representing all youth from the community.
                       A variety of activities are conducted at this to empower the rural community youth.
                       This has been a great platform for the local youth to get involved in career development.

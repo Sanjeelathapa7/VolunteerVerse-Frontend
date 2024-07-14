@@ -27,6 +27,11 @@ const CommunityHealth = () => {
     },
     text: {
       flex: 1,
+      flex: 1,
+      fontFamily: "Inder",
+      textAlign: "justify",
+      fontSize:'14px',
+      marginBottom: "10px"
     },
     sidebar: {
       width: "25%",
@@ -35,8 +40,9 @@ const CommunityHealth = () => {
     },
     sidebarHeader: {
       marginBottom: "20px",
-      fontSize: "1.2em",
+      fontSize: "14px",
       textAlign: "center",
+      fontFamily:"Inknut Antiqua",
     },
     program: {
       display: "flex",
@@ -53,31 +59,57 @@ const CommunityHealth = () => {
     programTitle: {
       fontWeight: "bold",
       color: "#007BFF",
-      fontSize: "0.9em",
+      fontSize: "12px",
+      fontFamily: "Inknut Antiqua",
     },
     programDescription: {
       fontSize: "0.8em",
       color: "#333",
+      fontFamily: "Inder",
     },
     objectivesHeader: {
       marginTop: "20px",
+      fontFamily:"Inknut Antiqua",
       fontWeight: "bold",
+      fontSize: "14px",
     },
     objectivesList: {
       listStyleType: "disc",
       marginLeft: "20px",
     },
     objectivesListItem: {
-      marginBottom: "10px",
-    },
+      marginBottom: "15px",
+      fontFamily: "Inder",
+      fontSize: '14px',
+      marginTop:'10px'    },
   };
+  const hstyle = {
+    fontFamily:"Inknut Antiqua",
+    fontSize: "14px",
+    fontWeight: "bold",
+    marginBottom:'10px'
+  }
+  const pstyle = {
+    fontFamily: "Inder",
+    textAlign: "justify",
+    fontSize:'14px',
+    marginTop: "8px"
+  }
+  const hostyle = {
+    fontFamily:"Inknut Antiqua",
+    fontSize: "14px",
+    fontWeight: "bold",
+    marginBottom: '5px',
+    marginTop:'15px'
+  }
+
 
   return (
     <div>
       <Navbar />
       <div style={styles.container}>
         <div style={styles.content}>
-          <h1>Public Health and Medical Care </h1>
+          <h1 style={hstyle}>Public Health and Medical Care </h1>
           <div style={styles.imageTextContainer}>
             <img
               src="assets/images/women.jpg"
@@ -91,11 +123,11 @@ const CommunityHealth = () => {
                               The volunteers’ skills and interests, as well as the assessed needs of the community,
                               will act as a guide to making each program relevant and beneficial.
                           </p>
-                          <p>VIN provides qualified doctors and nurses to staff local health clinics.
+                          <p style={pstyle}>VIN provides qualified doctors and nurses to staff local health clinics.
                               Medical internships in Nepal allow you to assist in reviewing patients at the
                               clinic, helping the staff and providing training, depending on their level of expertise.
                               The health clinic is open daily with a doctor present three days each week.</p>
-              <p>
+              <p style={pstyle}>
                               Community Health Education can sustainably improve the health of a community and is at the heart
                               of VIN’s health projects. Various sessions are provided for women’s groups, children’s groups,
                               as well as at schools. During a medical internship in Nepal the volunteer will formulate and run
@@ -104,19 +136,19 @@ const CommunityHealth = () => {
               </p>
             </div>
           </div>
-                  <h1>Current Health Issues</h1>
-                  <p>Rural Nepali are often reluctant to receive contemporary health services because of superstitious
+                  <h1 style={hostyle}>Current Health Issues</h1>
+                  <p style={pstyle}>Rural Nepali are often reluctant to receive contemporary health services because of superstitious
                       belief systems as well as other cultural influences.
                       This in turn often leads to fatalities from preventable illness.
                       Medical internships in Nepal are an opportunity to illustrate the importance and benefits of making
                       the transition towards conventional medicine.</p>
                   
-                  <p>Many of the health problems stem from a lack of basic hygiene practice and facilities.
+                  <p style={pstyle}>Many of the health problems stem from a lack of basic hygiene practice and facilities.
                       VIN has supported toilet construction within the community, and recent research has shown
                       significant benefits achieved through this project, but education is still needed to encourage
                       the change of behavioural habits.</p>
                   
-<p>VIN welcomes interested medical students, professionals, or organisations to join our Community Health and Medical Care Program.</p>
+<p style={pstyle}>VIN welcomes interested medical students, professionals, or organisations to join our Community Health and Medical Care Program.</p>
 
 
           <div style={styles.objectivesHeader}>How we do it:</div>

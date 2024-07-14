@@ -3,6 +3,7 @@
 import React from "react";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer"; // Import the Footer component
+import W from "./W";
 
 const WomenEmpowerment = () => {
   const styles = {
@@ -33,8 +34,10 @@ const WomenEmpowerment = () => {
     },
     sidebarHeader: {
       marginBottom: "20px",
-      fontSize: "1.2em",
+      fontSize: "14px",
       textAlign: "center",
+      fontFamily:"Inknut Antiqua",
+
     },
     program: {
       display: "flex",
@@ -51,15 +54,23 @@ const WomenEmpowerment = () => {
     programTitle: {
       fontWeight: "bold",
       color: "#007BFF",
-      fontSize: "0.9em",
+      fontSize: "12px",
+      fontFamily: "Inknut Antiqua",
+
     },
     programDescription: {
       fontSize: "0.8em",
       color: "#333",
+      fontFamily: "Inder",
+
+
     },
     objectivesHeader: {
       marginTop: "20px",
+      fontFamily:"Inknut Antiqua",
       fontWeight: "bold",
+      fontSize: "14px",
+
     },
     objectivesList: {
       listStyleType: "disc",
@@ -67,15 +78,30 @@ const WomenEmpowerment = () => {
     },
     objectivesListItem: {
       marginBottom: "10px",
+      fontFamily: "Inder",
+      fontSize:'14px',
+
     },
   };
-
+  const hstyle = {
+    fontFamily:"Inknut Antiqua",
+    fontSize: "14px",
+    fontWeight: "bold",
+    marginBottom:'10px'
+  }
+  
+  const pstyle = {
+    fontFamily: "Inder",
+    textAlign: "justify",
+    fontSize:'14px',
+    marginTop: "8px"
+  }
   return (
     <div>
       <Navbar />
       <div style={styles.container}>
         <div style={styles.content}>
-          <h1>Women Education, Rights and Life Skills</h1>
+          <h1 style={hstyle}>Women Education, Rights and Life Skills</h1>
           <div style={styles.imageTextContainer}>
             <img
               src="assets/images/women.jpg"
@@ -83,13 +109,13 @@ const WomenEmpowerment = () => {
               style={styles.image}
             />
             <div style={styles.text}>
-              <p>
+              <p style={pstyle}>
                 “If you really want to change a culture, to empower women,
                 improve basic hygiene and health care, and fight high rates of
                 infant mortality, the answer is to educate girls.” – Greg
                 Mortenson in Three Cups of Tea
               </p>
-              <p>
+              <p  style={pstyle}>
                 VolunteerVerse believes in the equal opportunities of women in
                 Nepal, therefore we have created a variety of projects which
                 assist women to overcome current adversity to not only survive,
@@ -101,7 +127,7 @@ const WomenEmpowerment = () => {
               </p>
             </div>
           </div>
-          <p>
+          <p  style={pstyle}>
             Many challenges within the community stem from the fact that
             educated men tend to leave their communities to find work, while
             women stay home. A locally based women’s empowerment program has the
@@ -117,7 +143,7 @@ const WomenEmpowerment = () => {
             <li style={styles.objectivesListItem}>Access to resources</li>
             <li style={styles.objectivesListItem}>Income generation</li>
           </ul>
-          <p>
+          <p style={pstyle}>
             Volunteers have the opportunity to exchange ideas, collaborate in
             ongoing projects, teach Basic English skills, help with small
             businesses, and be positive role models. You can also provide
@@ -145,8 +171,8 @@ const WomenEmpowerment = () => {
             </li>
           </ul>
 
-          <h1>Achievements</h1>
-          <p>
+          <h1 style={hstyle}>Achievements</h1>
+          <p style={pstyle}>
             In 2013 VIN taught 118 women through literacy classes, and over 500
             since its inception in 2004. These classes were taught in
             partnership with local teachers and overseen by the women’s
@@ -164,6 +190,8 @@ const WomenEmpowerment = () => {
             produce marketable items and would like to help women in these
             communities overcome discrimination, let us know!
           </p>
+          <W/>
+
         </div>
         <div style={styles.sidebar}>
           <h2 style={styles.sidebarHeader}>Other Volunteering Programs</h2>
@@ -271,7 +299,9 @@ const WomenEmpowerment = () => {
                 Volunteer for the Elderly People in Nepal Project aims to protect
                 and promote the wellbeing of the aging population. As you walk
                 on...
+
               </div>
+              
             </div>
           </div>
         </div>

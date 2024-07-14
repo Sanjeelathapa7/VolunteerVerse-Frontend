@@ -39,8 +39,8 @@ const EventCard = ({ event }) => {
         }
 
         .event-card-title {
-          font-size: 18px;
           margin-bottom: 10px;
+          font-family: "InknutAntiqua";
         }
 
         .event-details {
@@ -52,6 +52,8 @@ const EventCard = ({ event }) => {
         .event-location {
           color: #555;
           margin-bottom: 5px;
+                    font-family: "Inder";
+
         }
 
         

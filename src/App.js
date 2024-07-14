@@ -40,8 +40,10 @@ import Com from './pages/user/Com';
 import D from './pages/user/D';
 import Teaching from './pages/user/Teaching';
 import OurIm from './pages/user/OurIm';
+import W from './pages/user/W';
 
 function App() {
+  
   return (
     <Router>
       <ToastContainer />
@@ -80,6 +82,7 @@ function App() {
         <Route path="/d" element={<D />} />
         <Route path="/teaching" element={<Teaching />} />
         <Route path="/our" element={<OurIm />} />
+        <Route path="/w" element={<W />} />
         <Route path="/oppDetails/:id" element={<OppDetails />} />
 
 
