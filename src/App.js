@@ -41,6 +41,7 @@ import D from './pages/user/D';
 import Teaching from './pages/user/Teaching';
 import OurIm from './pages/user/OurIm';
 import W from './pages/user/W';
+import EditProfile from './pages/user/EditProfile';
 
 function App() {
   
@@ -57,9 +58,7 @@ function App() {
         <Route path="/community-health" element={<CommunityHealth />} />
         <Route path="/teaching-english" element={<Teaching />} />
         <Route path="/drr-research-volunteer" element={<DRR />} />
-        <Route path="/sendemail" element={<SendEmail />} />
-        <Route path="/resetpassword" element={<ResetPassword />} />
-        <Route path="/resetcode" element={<ForgotPasswordCode />} />
+        
         <Route path="/whatwedo" element={<Whatwedo />} />
         <Route path="/ourimpact" element={<OurImpact />} />
         <Route path="/contactus" element={<Contact />} />
@@ -69,6 +68,7 @@ function App() {
         <Route path="/donations" element={<DonationList />} /> {/* Assuming this is your donations list route */}
         <Route path="/donation/:id" element={<DonationDetails />} /> {/* Donation detail route */}
         <Route path="/profile" element={<Profile />} />
+        <Route path="/profile/edit/:id" element={<EditProfile />} />
         <Route path="/admin/event" element={<AdminEvent />} />
         <Route path="/chat" element={<Chat />} />
         {/* <Route path="/admin/chat" element={<AdminChat />} /> */}
@@ -85,6 +85,9 @@ function App() {
         <Route path="/w" element={<W />} />
         <Route path="/oppDetails/:id" element={<OppDetails />} />
 
+        <Route path='/sendemail' element={<SendEmail />} />
+        <Route path='/resetcode' element={<ForgotPasswordCode/>} />
+        <Route path='/resetpassword' element={<ResetPassword />} />
 
         <Route path="/organization/:id" element={<OrganizationDetails />} /> {/* Donation detail route */}
 

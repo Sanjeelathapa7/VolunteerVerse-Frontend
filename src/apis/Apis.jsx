@@ -16,25 +16,17 @@ const config = {
   },
 };
 
-
-
-
-
-
-  
-//register 
-export const registerApi = (data) => Api.post("/api/user/register", data)
-
+//register
+export const registerApi = (data) => Api.post("/api/user/register", data);
 
 //login
-export const loginApi = (data) => Api.post("/api/user/login", data)
-
-//forget pass
+export const loginApi = (data) => Api.post("/api/user/login", data);
+//for forget pass
 export const sendEmailApi = (data) => Api.post("/api/user/resetpassword", data);
-export const verifyCodeApi = (data) => Api.post("/api/user/resetcode", data, config);
-export const updatePasswordApi = (data) => Api.post("/api/user/updatepassword", data);
-
-
+export const verifyCodeApi = (data) =>
+  Api.post("/api/user/resetcode", data, config);
+export const updatePasswordApi = (data) =>
+  Api.post("/api/user/updatepassword", data);
 //create donation
 
 export const createDonationApi = (formData) =>
@@ -58,8 +50,7 @@ export const deleteDonationApi = (id) =>
 export const updateDonationPercentageApi = async (id) => {
   const response = await axios.put(`/donations/update-percentage/${id}`);
   return response.data;
-}
-
+};
 
 //create events
 
@@ -70,8 +61,7 @@ export const createEventApi = (formData) =>
 export const getAllEventsApi = () => Api.get("/api/event/get_events");
 
 //get single event API
-export const getSingleEventApi = (id) =>
-  Api.get(`/api/event/get_event/${id}`);
+export const getSingleEventApi = (id) => Api.get(`/api/event/get_event/${id}`);
 
 //update event
 export const updateEventApi = (id, formData) =>
@@ -81,25 +71,21 @@ export const updateEventApi = (id, formData) =>
 export const deleteEventApi = (id) =>
   Api.delete(`/api/event/delete_event/${id}`, config);
 
-
-
-//for profile 
+//for profile
 export const getUserProfileApi = () => {
   return Api.get("/api/user/profile", config); // Ensure `config` is passed here
 };
 export const updateUserProfileApi = (userId, data) =>
-  Api.put(`/api/user/update_profile/${userId}`, data,config);
+  Api.put(`/api/user/update_profile/${userId}`, data, config);
 
-
-
-
-//for organizations 
+//for organizations
 
 export const createOrganizationApi = (formData) =>
   Api.post("/api/organization/create_organization", formData);
 
 // get organization API
-export const getAllOrganizationsApi = () => Api.get("/api/organization/get_organizations");
+export const getAllOrganizationsApi = () =>
+  Api.get("/api/organization/get_organizations");
 
 //get single organization API
 export const getSingleOrganizationApi = (id) =>

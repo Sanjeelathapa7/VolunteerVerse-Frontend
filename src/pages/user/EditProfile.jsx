@@ -68,7 +68,6 @@ const EditProfile = () => {
       formData.append("firstName", userData.firstName);
       formData.append("lastName", userData.lastName);
       formData.append("contact", userData.contact);
-      formData.append("location", userData.location);
       formData.append("email", userData.email);
 
       if (profileImage) {
@@ -90,15 +89,15 @@ const EditProfile = () => {
   };
 
   return (
-    <div className="profile-page-container d-flex flex-column align-items-center justify-content-center">
-      <h2>Edit Your Profile, {userData?.firstName}</h2>
+    <div className="profile-page-container d-flex flex-column align-items-center justify-content-center "style={{marginTop:'30px'}}>
+      <h2 style={{ fontFamily: "Inknut Antiqua, serif", fontSize:'14px' }}>Edit Your Profile, {userData?.firstName}</h2>
       {loading ? (
         <p className="loading-text">Loading user data...</p>
       ) : userData ? (
         <div className="profile-details-container shadow-lg p-5">
           <div className="profile-details">
             <p>
-              <strong className="text-center">First Name:</strong>{" "}
+              <strong className="text-center" style={{ fontFamily: "Inknut Antiqua, serif", fontSize:'14px' }}>First Name:</strong>{" "}
               <input
                 className="form-control"
                 value={userData.firstName}
@@ -108,7 +107,7 @@ const EditProfile = () => {
               />
             </p>
             <p>
-              <strong>Last Name:</strong>{" "}
+              <strong style={{ fontFamily: "Inknut Antiqua, serif", fontSize:'14px' }}>Last Name:</strong>{" "}
               <input
                 className="form-control"
                 value={userData.lastName}
@@ -117,18 +116,9 @@ const EditProfile = () => {
                 }
               />
             </p>
+            
             <p>
-              <strong>Contact Number:</strong>{" "}
-              <input
-                className="form-control"
-                value={userData.contact}
-                onChange={(e) =>
-                  setUserData({ ...userData, contact: e.target.value })
-                }
-              />
-            </p>
-            <p>
-              <strong>Address:</strong>{" "}
+              <strong style={{ fontFamily: "Inknut Antiqua, serif", fontSize:'14px' }}>Address:</strong>{" "}
               <input
                 className="form-control"
                 value={userData.location}
@@ -138,7 +128,7 @@ const EditProfile = () => {
               />
             </p>
             <p>
-              <strong>Email:</strong>{" "}
+              <strong style={{ fontFamily: "Inknut Antiqua, serif", fontSize:'14px' }}>Email:</strong>{" "}
               <input
                 className="form-control"
                 value={userData.email}
@@ -148,7 +138,7 @@ const EditProfile = () => {
               />
             </p>
             <label>
-              <strong>Profile Image:</strong>
+              <strong style={{ fontFamily: "Inknut Antiqua, serif", fontSize:'14px' }}>Profile Image:</strong>
               <input type="file" onChange={handleProfileImageUpload} />
               {profileImage && (
                 <img
@@ -162,8 +152,8 @@ const EditProfile = () => {
           </div>
           <div style={{ display: "flex", justifyContent: "center" }}>
             <button
-              className="btn m-2 shadow-lg"
-              style={{ backgroundColor: "rgba(97, 124, 181, 1)" }}
+              className="btn m-2 shadow-lg "
+              style={{ backgroundColor: "rgba(97, 124, 181, 1)",  fontFamily:"Inknut Antiqua", color:'white'}}
               onClick={handleSaveProfile}
             >
               Save Profile

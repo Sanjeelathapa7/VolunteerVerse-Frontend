@@ -96,7 +96,7 @@ const Login = () => {
     <input type="checkbox" id="rememberMe" name="rememberMe" />
     <label htmlFor="rememberMe" style={{ fontFamily: "Inknut Antiqua, serif", fontSize:'13px',marginLeft: '5px' }}>Remember me</label>
   </div>
-  <a href="#" style={{fontFamily: "Inknut Antiqua, serif", fontSize:'13px', textDecoration: 'none'  }}>Forgot password?</a>
+  <a href="/sendemail" style={{fontFamily: "Inknut Antiqua, serif", fontSize:'13px', textDecoration: 'none'  }}>Forgot password?</a>
 </div>
               <button
                 onClick={handleSubmit}
